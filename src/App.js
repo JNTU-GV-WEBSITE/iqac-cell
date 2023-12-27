@@ -5,7 +5,7 @@ import { Typography } from '@mui/material';
 function App() {
   return (
     <div className="App">
- <Typography variant='h2'> IQAC CELL</Typography>
+      <Typography variant='h2'> IQAC CELL</Typography>
     </div>
   );
 }
