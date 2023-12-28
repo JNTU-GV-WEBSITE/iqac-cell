@@ -63,10 +63,20 @@ const Dropdown = () => {
             </button>
           </div>
         </div>
+
+        <div class="dropdown">
+          <div className="dropbtn" onClick={contactHandler}>
+            <div className="drop-icon" onClick={() => setMenuState(!menuState)}>
+              <DraftsIcon /> Quality Assurance Team
+            </div>
+          </div>
+        </div>
+
         <div class="dropdown">
           <div class="dropbtn">
             <GroupsIcon /> NIRF
           </div>
+          
           <div class="dropdown-content" onClick={() => setMenuState(!menuState)}>
             {/*<button>
               {" "}
