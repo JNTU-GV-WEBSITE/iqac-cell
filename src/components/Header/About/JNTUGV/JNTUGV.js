@@ -21,7 +21,7 @@ function JNTUGV() {
             the constituent college of JNTU Kakinada. Vide University Act No.22
             of 2021, JNTU Kakinada is bifurcated and Jawaharlal Nehru
             Technological University Gurajada, Vizianagaram come into existence
-            as a separate University vide G.O.Ms.No.3, dated: 12-01-2022.
+            as a separate University vide G.O.Ms.No.3, dated: 12-01-2022.</Typography><br/>
             <Typography>
               The university is spread across six districts i.e
               Vizianagaram,Visakhapatnam, Srikakulam, Parvathipuram Manyam,
@@ -29,7 +29,7 @@ function JNTUGV() {
               colleges and 37 affiliated colleges under its jurisdiction and
               catering education in different Engineering, Pharmacy and
               Management departments.
-            </Typography>
+            
           </Typography>
         </div>
       </div>

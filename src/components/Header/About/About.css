@@ -112,8 +112,39 @@
       font-size: 15px;
       color: rgb(20, 6, 63);
     }
+
+    .intro{
+      color: #2e0669;
+    }
+
+    .vision{
+      color: #2e0669;
+    }
+
+    .mission{
+      color: #2e0669;
+    }
+
+    .ss{
+      color: #2e0669;
+    }
+
+    .func{
+      color: #2e0669;
+    }
   
+    .ben{
+      color: #2e0669;
+    }
     
+    .features{
+      color: #2e0669;
+    }
+
+    .mm{
+      color: #2e0669;
+    }
+
   @media screen and (max-width: 600px) {
     .ABOUT-Main {
       display: flex;

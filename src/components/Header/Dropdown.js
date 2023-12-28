@@ -55,12 +55,12 @@ const Dropdown = () => {
                 About JNTU-GV
               </Link>
             </button>
-            {/*<button>
+            <button>
               {" "}
-              <Link className="link-btn" to="/about-us/mission">
-                Mission
+              <Link className="link-btn" to="/about-us/about-Director">
+                About Director
               </Link>
-            </button>*/}
+            </button>
           </div>
         </div>
         <div class="dropdown">
