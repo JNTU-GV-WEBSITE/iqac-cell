@@ -1,6 +1,6 @@
 import { Link, Outlet, useLocation } from "react-router-dom";
 import "./About.css"; 
-const AboutusMain = () => {
+const AboutMain = () => {
   const location = useLocation();
 
   return (
@@ -30,4 +30,4 @@ const AboutusMain = () => {
   );
 };
 
-export default AboutusMain;
+export default AboutMain;
