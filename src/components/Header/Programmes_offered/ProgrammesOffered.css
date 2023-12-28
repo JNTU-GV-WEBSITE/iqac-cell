@@ -1,0 +1,45 @@
+/* ProgrammesOffered.css */
+
+.tableProgramOffered {
+  height: 90vh;
+  width: 80vw;
+  padding-top: 10px;
+  margin: auto; /* Add this line to center the table */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchProgramsOffered {
+  width: 100%;
+}
+
+.headProgramsOffered {
+  color: #690001;
+  font-weight: 600;
+  font-size: 26px;
+  width: 400px;
+  text-align: center; /* Center the heading text */
+}
+
+.searchTextProgramsOffered {
+  width: 30%; /* Increase the width as needed */
+  padding-bottom: 0.5rem;
+  margin-left: 50%;
+}
+
+@media screen and (max-width: 500px) {
+  .searchProgramsOffered {
+    width: 100%;
+  }
+  .tableProgramOffered {
+    height: 80vh;
+    width: 100%;
+  }
+  .searchTextProgramsOffered {
+    width: 50%;
+    padding-bottom: 0.5rem;
+    margin-left: 55%;
+  }
+}

@@ -9,6 +9,8 @@ import IQAC from './components/Header/About/IQAC/IQAC';
 import JNTUGV from './components/Header/About/JNTUGV/JNTUGV';
 import Director from './components/Header/About/DIRECTOR/Director';
 import { Route, Routes } from 'react-router-dom';
+// import QAT from './components/Header/QAT/QAT';
+import ProgrammesOffered from './components/Header/Programmes_offered/ProgrammesOffered';
 
 function App() {
   return (
@@ -22,6 +24,10 @@ function App() {
           <Route path="about-director" element={<Director />} />
         </Route>
       </Routes>
+
+      {/*<QAT/>*/}
+      <ProgrammesOffered/>
+      
 
       <Footer />
     </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import "../About.css";
-// import directorImage from './Director.jpg';
+import directorImage from "../Director.jpg";
+
 
 
 function Director() {
@@ -13,19 +14,16 @@ function Director() {
           {/* Profile information */}
           <div className="ADimg">
             <center>
-              {/*<img
-                src={dap}
-                alt="Profile"
-  />*/}
+              <img
+                src={directorImage}
+                alt="Profile"/>
             </center>
           </div>
         </div>
         <center>
           <div className="profileName">
             <h3 className="ADh3">Dr. K. Chandra Bhushana Rao</h3>
-            <h3 className="ADh3">
-              Director of Internal Quality Assurance Cell
-            </h3>
+            <h4 className="ADh4">Director of Internal Quality Assurance Cell</h4>
           </div>
           <div className="profileDesignation">
             <h4 className="ADh4">
