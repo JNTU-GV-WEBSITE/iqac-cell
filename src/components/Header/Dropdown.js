@@ -57,7 +57,7 @@ const Dropdown = () => {
             </button>
             <button>
               {" "}
-              <Link className="link-btn" to="/about-us/about-Director">
+              <Link className="link-btn" to="/about-us/about-director">
                 About Director
               </Link>
             </button>
@@ -65,12 +65,13 @@ const Dropdown = () => {
         </div>
 
         <div class="dropdown">
-          <div className="dropbtn" onClick={contactHandler}>
-            <div className="drop-icon" onClick={() => setMenuState(!menuState)}>
-              <DraftsIcon /> Quality Assurance Team
-            </div>
+          <div className="dropbtn">
+          <Link to="/qat" className="drop-icon" onClick={() => setMenuState(!menuState)}>
+          <DraftsIcon /> QUALITY ASSURANCE TEAM
+        </Link>
           </div>
         </div>
+
 
         <div class="dropdown">
           <div class="dropbtn">
@@ -384,11 +385,11 @@ const Dropdown = () => {
           </div>
         </div> */}
         <div class="dropdown">
-          <div className="dropbtn" onClick={contactHandler}>
-            <div className="drop-icon" onClick={() => setMenuState(!menuState)}>
-              <DraftsIcon /> PROGRAMMES OFFERED
-            </div>
-          </div>
+        <div className="dropbtn">
+        <Link to="/programmes-offered" className="drop-icon" onClick={() => setMenuState(!menuState)}>
+          <DraftsIcon /> PROGRAMMES OFFERED
+        </Link>
+      </div>
         </div>
 
         <div class="dropdown">
