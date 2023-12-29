@@ -1,15 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import './QAT.css';
+
+// Import data directly
+import iqacMembersData from './QATData'; // Adjust the path based on your project structure
 
 const QAT = () => {
-  const [iqacMembers, setIQACMembers] = useState([]);
-
-  useEffect(() => {
-    // Load data from JSON file
-    fetch('/path/to/iqacMembers.json')
-      .then((response) => response.json())
-      .then((data) => setIQACMembers(data))
-      .catch((error) => console.error('Error loading IQAC members:', error));
-  }, []);
+  // Use the imported data directly
+  const iqacMembers = iqacMembersData;
 
   // Render table rows
   const renderTableRows = () => {
@@ -25,7 +22,7 @@ const QAT = () => {
 
   return (
     <div>
-      <h2>IQAC Members</h2>
+      <h2 className='QAT2'>IQAC Members</h2>
       <table>
         <thead>
           <tr>
@@ -35,9 +32,7 @@ const QAT = () => {
             <th>Role in IQAC</th>
           </tr>
         </thead>
-        <tbody>
-          {renderTableRows()}
-        </tbody>
+        <tbody>{renderTableRows()}</tbody>
       </table>
     </div>
   );
