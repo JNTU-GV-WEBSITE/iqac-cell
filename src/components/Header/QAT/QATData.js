@@ -1,5 +1,5 @@
 // QATData.js
-const iqacMembers = [
+const AnnualQualityAssuranceReport = [
     {
       sno: 1,
       name: "Prof. R. Rajeswara Rao",
@@ -76,5 +76,5 @@ const iqacMembers = [
 
   ];
   
-  export default iqacMembers;
+  export default AnnualQualityAssuranceReport;
   

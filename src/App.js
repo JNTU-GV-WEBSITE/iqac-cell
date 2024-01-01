@@ -10,6 +10,17 @@ import JNTUGV from './components/Header/About/JNTUGV/JNTUGV';
 import Director from './components/Header/About/DIRECTOR/Director';
 import ProgrammesOffered from './components/Header/Programmes_offered/ProgrammesOffered';
 import QAT from './components/Header/QAT/QAT';
+import AQAR from './components/Header/AQAR/AQAR';
+import PdfViewer from './components/Header/AQAR/PdfViewer';
+import FeedbackformsMain from './components/Header/Feedbackforms/FeedbackformsMain';
+import Faculty from './components/Header/Feedbackforms/Faculty/Faculty';
+import Student from './components/Header/Feedbackforms/Student/Student';
+import Alumni from './components/Header/Feedbackforms/Alumni/Alumni';
+import CS from './components/Home/Data/CS';
+import VisionMission from './components/Home/Data/Visionmission';
+
+
+
 
 function App() {
   const location = useLocation();
@@ -29,8 +40,18 @@ function App() {
         </Route>
         <Route path="/programmes-offered" element={<ProgrammesOffered />} />
         <Route path="/qat" element={<QAT />} />
-      </Routes>
-
+        <Route path="/AQAR" element={<AQAR />} />
+        <Route path="/pdf-viewer/:path" element={<PdfViewer />} />
+      
+      <Route path="/feedbackforms" element={<FeedbackformsMain />}>
+          <Route path="faculty-form" element={<Faculty />} />
+          <Route path="student-form" element={<Student />} />
+          <Route path="alumni-form" element={<Alumni />} />
+        </Route>
+        
+        <Route path="/about-vision-mission" element={<VisionMission />} />
+        <Route path="/about-consulty-services" element={<CS />} />
+        </Routes>
       {/* Conditionally render the Footer only on the home page */}
       {isHomePage && <Footer />}
     </div>
