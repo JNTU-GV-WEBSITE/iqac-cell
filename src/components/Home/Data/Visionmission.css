@@ -8,6 +8,29 @@
     margin-top: 10px;
     margin-right: 60px;
   }
+
+  .centeredContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the container horizontally */
+  }
+
+  .allRightContentHeading {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #2e0669;
+  }
+  
+  
+  
+  .a {
+    font-weight: bold;
+    font-size: 15px;
+    color: rgb(20, 6, 63);
+  }
   
   
   .ABOUTallLeftMenu .menubutton {
@@ -112,60 +135,6 @@
       font-size: 15px;
       color: rgb(20, 6, 63);
     }
-
-    .allRightContentHeading {
-        font-size: 30px;
-        font-weight: bold;
-        text-align: center;
-        color: #2e0669;
-      }
-
-      .nav-link {
-        /* Add your styles for the Link component here */
-        color: black;
-        text-decoration: none;
-        font-size: 20px;
-        font-weight: bold;
-      }
-      
-      .nav-link:hover {
-        /* Add your styles for the Link component on hover here */
-        text-decoration: underline;
-      }
-
-      .blinking-text {
-        animation: blink-animation 1s infinite;
-        color: blue; /* Change the color to blue or any other color you prefer */
-      }
-
-      .iqacMessageContainer {
-        background-color: #f0f0f0;
-        padding: 20px;
-        margin: 20px 0;
-      }
-      
-      .iqacMessage {
-        text-align: center;
-      }
-      
-      .signature {
-        text-align: right;
-        margin-top: 20px;
-        font-style: italic;
-      }
-      
-      
-      @keyframes blink-animation {
-        0%, 100% {
-          opacity: 1;
-        }
-        50% {
-          opacity: 0;
-        }
-      }
-      
-      
-      
   
     
   @media screen and (max-width: 600px) {
