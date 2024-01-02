@@ -1,5 +1,5 @@
 import React from "react";
-import "./Visionmission.css";
+import "./Data.css";
 import Typography from "@mui/material/Typography";
 
 function VisionMission() {

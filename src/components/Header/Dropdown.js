@@ -104,13 +104,11 @@ const Dropdown = () => {
 
         <div class="dropdown">
           <div class="dropbtn">
+          <Link to="/course-details" className="drop-icon" onClick={() => setMenuState(!menuState)}>
             <GridViewRoundedIcon />
             COURSE DETAILS
+            </Link>
           </div>
-          <div class="dropdown-content" onClick={() => setMenuState(!menuState)}>
-              
-            
-            </div>
         </div>
 
         {/*<div class="dropdown">
@@ -144,7 +142,7 @@ const Dropdown = () => {
 
         <div class="dropdown">
         <div className="dropbtn">
-        <Link to="/programmes-offered" className="drop-icon" onClick={() => setMenuState(!menuState)}>
+        <Link to="/reports" className="drop-icon" onClick={() => setMenuState(!menuState)}>
           <DescriptionIcon /> REPORTS
         </Link>
       </div>
