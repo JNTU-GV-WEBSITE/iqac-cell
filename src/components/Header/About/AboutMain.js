@@ -15,7 +15,6 @@ const AboutMain = () => {
         >
           IQAC
         </Link>
-        
         <Link
           to="about-jntugv"
           className={`menuButton ${
@@ -24,7 +23,6 @@ const AboutMain = () => {
         >
           JNTU-GV
         </Link>
-
         <Link
           to="about-director"
           className={`menuButton ${

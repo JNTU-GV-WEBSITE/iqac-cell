@@ -2,6 +2,7 @@
     display: flex;
     padding-left: 40px;
     padding-top: 10px;
+    
   }
   
   .ABOUTallLeftMenu{
@@ -135,6 +136,28 @@
       font-size: 15px;
       color: rgb(20, 6, 63);
     }
+
+    .app-container {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+  }
+  
+  .under-construction {
+    text-align: justify;
+  }
+  
+  h1 {
+    color: #2e0669;
+  }
+  
+  p {
+    color: #333;
+  }
+  
   
     
   @media screen and (max-width: 600px) {
