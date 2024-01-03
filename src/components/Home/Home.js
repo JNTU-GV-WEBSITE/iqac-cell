@@ -46,9 +46,9 @@ function Home() {
           <Scrollbar className="Scrollbar" />
         </div>
       </div>
-
+      <div className="UpdatePanel">
       <UpdatePanel />
-      
+      </div>
       <div className="iqacMessageContainer">
         {/* IQAC Message */}
         <div className="iqacMessage">
