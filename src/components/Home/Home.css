@@ -127,10 +127,17 @@
       flex-direction: column;
     } 
 
+
+    .UpdatePanel{
+      margin-top: -472px;
+    }
+
+
     .NewsAndEventsContainer {
       display: flex;
       flex-direction: column; /* Stack children vertically */
       justify-content: space-between;
+      margin-top: 500px;
     }
     
     .NewsandEvents {
