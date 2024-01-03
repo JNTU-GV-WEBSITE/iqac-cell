@@ -33,6 +33,9 @@ import Feedback from './components/Home/Data/Feedback';
 import Constitution from './components/Home/Data/Constitution';
 import AICTE from './components/Home/Data/AICTE';
 import PCOI from './components/Home/Data/PCOI';
+//import NewsandEvents from './components/Home/NewsandEvents/NewsandEvents';
+import Scrollbar from './components/Home/NewsandEvents/Scrollbar';
+import UpdatePanel from './components/Home/UpdatePanel/UpdatePanel';
 
 
 
@@ -81,7 +84,11 @@ function App() {
         <Route path="/about-constitution-of-iqac" element={<Constitution />} />
         <Route path="/about-aicte-approvals" element={<AICTE />} />
         <Route path="/about-pcoi" element={<PCOI />} />
+        {/* <Route path="/about-news-and-events" element={<NewsandEvents />} /> */}
+        <Route path="/scrolling-bar" element={<Scrollbar />} />
+        <Route path="/update-panel" element={<UpdatePanel />} />
         </Routes>
+
       {/* Conditionally render the Footer only on the home page */}
       {isHomePage && <Footer />}
     </div>
