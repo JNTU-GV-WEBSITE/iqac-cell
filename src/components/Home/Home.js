@@ -2,23 +2,22 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import "./Home.css";
 import '@fortawesome/fontawesome-free/css/all.css';
+// import NewsandEvents from "./NewsandEvents/NewsandEvents";
+import Scrollbar from "./NewsandEvents/Scrollbar";
+import UpdatePanel from "./UpdatePanel/UpdatePanel";
 
 function Home() {
   return (
     <div className="ABOUTmainContainer">
-      <div className="allRightContent">
-        <div className="allRightContentHeading">Internal Quality Assurance Cell [IQAC]</div>
-
-        
-
-        <div className="allRightContentProfile">
-          {/* Profile information */}
-          <center></center>
-          <hr />
-          {/* Profile description */}
-          
-          <ul>
-            {/* Your links go here */}
+      <div className="allRightContentContainer">
+        <div className="allRightContent">
+          <div className="allRightContentHeading">Internal Quality Assurance Cell [IQAC]</div>
+          <div className="allRightContentProfile">
+            {/* Profile information */}
+            <center></center>
+            <hr />
+            {/* Profile description */}
+            <ul>
   <Link to="/about-us/about-iqac" className="nav-link"><span role="img" aria-label="pointing-finger" className="blinking-text">👉🏻</span>About IQAC</Link><br />
   <Link to="/about-us/about-jntugv" className="nav-link"><span role="img" aria-label="pointing-finger" className="blinking-text">👉🏻</span>About JNTUGV</Link><br />
   <Link to="/about-iiqa" className="nav-link"><span role="img" aria-label="pointing-finger" className="blinking-text">👉🏻</span>Institutional Information for Quality Assessment(IIQA)</Link><br />
@@ -39,22 +38,28 @@ function Home() {
   <Link to="/about-pcoi" className="nav-link"><span role="img" aria-label="pointing-finger" className="blinking-text">👉🏻</span>Pharmacy Council of India</Link><br />
   {/* <Link to="/about-us/about-iqac" className="nav-link"><span role="img" aria-label="pointing-finger" className="blinking-text">👉🏻</span>PBAS New Format</Link><br /> */}
   {/* <Link to="/about-us/about-iqac" className="nav-link"><span role="img" aria-label="pointing-finger" className="blinking-text">👉🏻</span>PBAS New Format – MS-WORD Document</Link> */}
-  
           </ul>
-        </div>
-      </div>
-      <div className="iqacMessageContainer">
-          {/* IQAC Message */}
-          <div className="iqacMessage">
-            <p><b>IQAC Message </b></p>
-            <p>
-              "To ensure quality culture as the prime concern for the Higher Education Institutions through institutionalizing and internalizing all the initiatives taken with internal and external support.""
-            </p>
-            <p className="signature">Dr. K. Chandra Bhushana Rao<br />IQAC Coordinator</p>
           </div>
         </div>
+        <div className="NewsAndEventsContainer">
+          {/* <NewsandEvents className="NewsandEvents" /> */}
+          <Scrollbar className="Scrollbar" />
+        </div>
+      </div>
+
+      <UpdatePanel />
+      
+      <div className="iqacMessageContainer">
+        {/* IQAC Message */}
+        <div className="iqacMessage">
+          <p><b>IQAC Message </b></p>
+          <p>
+            "To ensure quality culture as the prime concern for the Higher Education Institutions through institutionalizing and internalizing all the initiatives taken with internal and external support.""
+          </p>
+          <p className="signature">Dr. K. Chandra Bhushana Rao<br />IQAC Coordinator</p>
+        </div>
+      </div>
     </div>
-    
   );
 }
 
