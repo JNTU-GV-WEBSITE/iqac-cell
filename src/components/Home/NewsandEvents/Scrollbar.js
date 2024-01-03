@@ -1,4 +1,4 @@
-import "bootstrap/dist/css/bootstrap.min.css";
+//import "bootstrap/dist/css/bootstrap.min.css";
 import React, { useEffect, useRef } from "react";
 import $ from "jquery";
 import "jquery.marquee";
