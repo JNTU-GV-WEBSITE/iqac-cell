@@ -1,6 +1,7 @@
 import "./UpdatePanel.css";
 import { useState } from "react";
 import { Data } from "./Data";
+
 import { Button } from "@mui/material";
 function UpdatePanel() {
   const examinationList = [];
@@ -108,7 +109,7 @@ function UpdatePanel() {
         >
           Recruitment 2023
           <img
-            src="images/new.gif"
+            src="https://frontend-jntugv.vercel.app/images/new.gif"
             alt="newimg"
             height="20vh"
             width="50vh"
@@ -136,7 +137,7 @@ function UpdatePanel() {
         >
           Exams
           <img
-            src="images/new.gif"
+            src="https://frontend-jntugv.vercel.app/images/new.gif"
             alt="newimg"
             height="20vh"
             width="50vh"
