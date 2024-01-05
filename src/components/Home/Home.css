@@ -50,11 +50,11 @@
   flex-wrap: wrap; 
   /* justify-content: space-between; */
   justify-content: center;
-  
+  padding-left: 100px;
 }
 
 .column {
-  text-align: center;
+  text-align: left;
   width: 50%; /* Adjust the width as needed, leaving some space for margin */
 }
   
@@ -123,6 +123,7 @@
       font-weight: bold;
       text-align: center;
       color: #2e0669;
+      margin-right: 0px;
     }
 
     .allRightContentProfile {
@@ -136,6 +137,8 @@
     }
 
     .allRightContent {
+      margin-right: -110vh;
+      width: 100%;
       align-items: center; /* Center the container horizontally */
       text-align: center;
       flex: 1; /* Use flex to allow this container to grow and take available space */
@@ -149,7 +152,7 @@
 
 
     .UpdatePanel {
-      margin-top: -472px;
+      margin-top: -503px;
     }
     
     .NewsAndEventsContainer {
