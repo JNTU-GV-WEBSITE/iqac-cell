@@ -50,8 +50,8 @@ function Home() {
     </div>
   </div>
 </div>
-        
         <div className="NewsAndEventsContainer">
+        <br /><br /><br /><br /><br />
           {/* <NewsandEvents className="NewsandEvents" /> */}
           <Scrollbar className="Scrollbar" />
         </div>
