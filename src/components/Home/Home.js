@@ -50,6 +50,7 @@ function Home() {
     </div>
   </div>
 </div>
+        
         <div className="NewsAndEventsContainer">
           {/* <NewsandEvents className="NewsandEvents" /> */}
           <Scrollbar className="Scrollbar" />
@@ -58,6 +59,7 @@ function Home() {
       <div className="UpdatePanel">
       <UpdatePanel />
       </div>
+          <br />
       <div className="iqacMessageContainer">
         {/* IQAC Message */}
         <div className="iqacMessage">
