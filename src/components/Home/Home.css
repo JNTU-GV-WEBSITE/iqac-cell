@@ -45,7 +45,18 @@
   font-weight: bold;
 }
 
+.columns-container {
+  display: flex;
+  flex-wrap: wrap; 
+  /* justify-content: space-between; */
+  justify-content: center;
+  
+}
 
+.column {
+  text-align: center;
+  width: 50%; /* Adjust the width as needed, leaving some space for margin */
+}
   
   /* Button structure */
   .ABOUTallLeftMenu {
@@ -91,6 +102,10 @@
 
   .allRightContentContainer {
     display: flex;
+    justify-content: center;
+  /* align-items: center;
+  flex-direction: column;
+  margin-top: 20px; */
   }
 
   .updatePanelAndNewsContainer {
@@ -111,6 +126,9 @@
     }
 
     .allRightContentProfile {
+      /* display: flex;
+      flex-direction: column;
+      align-items: center; */
       font-weight: bold;
       color: black;
       font-size: 18px;
@@ -118,6 +136,8 @@
     }
 
     .allRightContent {
+      align-items: center; /* Center the container horizontally */
+      text-align: center;
       flex: 1; /* Use flex to allow this container to grow and take available space */
     }
 
@@ -145,8 +165,11 @@
     }
     
     .Scrollbar {
-      /* Set width for Scrollbar */
       width: 30%; /* Adjust as needed */
+      overflow-y: scroll;
+      scroll-behavior: smooth;
+      scroll-snap-type: y mandatory;
+      scroll-padding: 10px;
     }
 
     .nav-link {
@@ -155,6 +178,7 @@
       text-decoration: none;
       font-size: 20px;
       font-weight: bold;
+      
     }
     
     .nav-link:hover {

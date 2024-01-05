@@ -17,7 +17,7 @@ const NewsandEvents = () => {
             <div>
               {item.text}
               <img
-                src="images/new.gif"
+                src="https://frontend-jntugv.vercel.app/images/new.gif"
                 alt="newimg"
                 height="20vh"
                 width="50vh"
