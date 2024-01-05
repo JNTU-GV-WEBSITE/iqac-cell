@@ -59,7 +59,7 @@ function Home() {
       <div className="UpdatePanel">
       <UpdatePanel />
       </div>
-      <br /><br /><br />
+      <br /><br />
       <div className="iqacMessageContainer">
         {/* IQAC Message */}
         
