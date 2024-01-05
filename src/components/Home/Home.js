@@ -59,10 +59,12 @@ function Home() {
       <div className="UpdatePanel">
       <UpdatePanel />
       </div>
-      
+      <br /><br /><br /><br />
       <div className="iqacMessageContainer">
         {/* IQAC Message */}
+        
         <div className="iqacMessage">
+          
           <p><b>IQAC Message </b></p>
           <p>
             "To ensure quality culture as the prime concern for the Higher Education Institutions through institutionalizing and internalizing all the initiatives taken with internal and external support.""
