@@ -32,6 +32,7 @@ function Director() {
           </div>
         </center>
         <hr />
+        <div className="rightcontent">
         {/* Profile description */}
         <p>Email: dap@jntugv.edu.in</p>
         <hr></hr>
@@ -167,6 +168,7 @@ function Director() {
         <p>
           ❖ Given about 23 webinars as Resource person during 2020-21 Lock down.
         </p>
+        </div>
       </div>
     </div>
   );

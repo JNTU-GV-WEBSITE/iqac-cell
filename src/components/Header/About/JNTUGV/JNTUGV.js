@@ -12,6 +12,7 @@ function JNTUGV() {
           {/* Profile information */}
           <center></center>
           <hr />
+          <div className="rightcontent">
           {/* Profile description */}
           <Typography>
             JNTU College of Engineering, Vizianagaram was established in the
@@ -31,6 +32,7 @@ function JNTUGV() {
               Management departments.
             
           </Typography>
+          </div>
         </div>
       </div>
     </div>
