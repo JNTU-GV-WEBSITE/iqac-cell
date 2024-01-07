@@ -172,3 +172,7 @@
       flex-direction: column;
     }
   }
+
+.rightcontent{
+  text-align: left;
+}

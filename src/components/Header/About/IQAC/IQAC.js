@@ -12,6 +12,8 @@ function IQAC() {
           {/* Profile information */}
           <center></center>
           <hr />
+          <div className="rightcontent">
+
           {/* Profile description */}
           <h2 className="intro">Introduction</h2>
           <Typography>The IQAC is meant for planning, guiding and monitoring Quality Assurance (QA) 
@@ -108,7 +110,7 @@ function IQAC() {
          ❖ The Universities shall regularly submit the AQARs to the NAAC/other accreditation bodies.<br />
          ❖ All Universities shall submit AQARs and/or Quality Radars (QRs) and follow up reports of AQARs to the UGC.<br />
          </Typography>
-
+         </div>
         </div>
       </div>
     </div>
