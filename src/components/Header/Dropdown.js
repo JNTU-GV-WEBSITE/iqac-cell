@@ -104,12 +104,24 @@ const Dropdown = () => {
 
         <div class="dropdown">
           <div class="dropbtn">
-          <Link to="/course-details" className="drop-icon" onClick={() => setMenuState(!menuState)}>
-            <GridViewRoundedIcon />
-            COURSE DETAILS
-            </Link>
+            <GridViewRoundedIcon /> COURSE DETAILS 
           </div>
-        </div>
+          <div class="dropdown-content" onClick={() => setMenuState(!menuState)}>
+            <button >
+              {" "}
+              <Link className="link-btn" to="/about-course-details/about-ug-syllabus">
+                UG Syllabus
+              </Link>
+            </button>
+            <button>
+              {" "}
+              <Link className="link-btn" to="/about-course-details/about-pg-syllabus">
+                PG Syllabus              
+             </Link>
+            </button>
+            
+          </div>
+       </div>
 
         {/*<div class="dropdown">
           <div class="dropbtn">

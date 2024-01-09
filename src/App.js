@@ -10,6 +10,7 @@ import IQAC from './components/Header/About/IQAC/IQAC';
 import JNTUGV from './components/Header/About/JNTUGV/JNTUGV';
 import Director from './components/Header/About/DIRECTOR/Director';
 import Coursedetails from './components/Header/Coursedetails/Coursedetails';
+import UGsyllabus from './components/Header/Coursedetails/UGsyllabus/UGsyllabus';
 import ProgrammesOffered from './components/Header/Programmes_offered/ProgrammesOffered';
 import Reports from './components/Header/Reports/Reports';
 import QAT from './components/Header/QAT/QAT';
@@ -41,6 +42,7 @@ import UpdatePanel from './components/Home/UpdatePanel/UpdatePanel';
 
 
 
+
 function App() {
   const location = useLocation();
 
@@ -58,10 +60,19 @@ function App() {
           <Route path="about-director" element={<Director />} />
         </Route>
         <Route path="/reports" element={<Reports />} />
-        <Route path="/course-details" element={<Coursedetails />} />
+
+        
+  <Route path="/about-course-details" element={<Coursedetails />}>
+    <Route path="about-ug-syllabus" element={<UGsyllabus />} />
+    {/* Add more nested routes as needed */}
+  </Route>
+
+
+
+        
         <Route path="/programmes-offered" element={<ProgrammesOffered />} />
         <Route path="/qat" element={<QAT />} />
-        <Route path="/AQAR" element={<AQAR />} />
+        <Route path="/aqar" element={<AQAR />} />
         <Route path="/pdf-viewer/:path" element={<PdfViewer />} />
       
       <Route path="/feedbackforms" element={<FeedbackformsMain />}>
@@ -88,6 +99,8 @@ function App() {
         <Route path="/scrolling-bar" element={<Scrollbar />} />
         <Route path="/update-panel" element={<UpdatePanel />} />
         </Routes>
+
+        
 
       {/* Conditionally render the Footer only on the home page */}
       {isHomePage && <Footer />}
