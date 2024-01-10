@@ -35,7 +35,7 @@ function Director() {
         <div className="rightcontent">
         {/* Profile description */}
         <p>Email: dap@jntugv.edu.in</p>
-        <hr></hr>
+        <hr />
         <p>
           Dr. Kota. Chandrabhushana Rao, completed his B.E, M.E and PhD in ECE
           from AU, Visakhapatnam during1992, 1995 and 2005 respectively. Having

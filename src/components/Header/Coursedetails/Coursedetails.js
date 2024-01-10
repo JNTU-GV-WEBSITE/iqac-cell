@@ -1,15 +1,34 @@
-import React from 'react';
-import './Coursedetails.css';
+import { Link, Outlet, useLocation } from "react-router-dom";
+import "./Coursedetails.css"; 
+const Coursedetails = () => {
+  const location = useLocation();
 
-function Coursedetails() {
   return (
-    <div className="app-container">
-      <div className="under-construction">
-        <h1>Course details Web Page is Under Construction</h1>
-        <p>We are working on something great and will be back soon with valuable information!</p>
+    <div className="ABOUT-Main">
+      <div className="ABOUTallLeftMenu">
+         
+      <Link
+        to="about-ug-syllabus"
+        className={`menuButton ${
+          location.pathname === "/about-course-details/about-ug-syllabus" ? "active" : ""
+        }`}
+      >
+        UG Syllabus
+      </Link>
+        <Link
+          to="about-pg-syllabus"
+          className={`menuButton ${
+            location.pathname === "/about-course-details/about-pg-syllabus" ? "active" : ""
+          }`}
+        >
+          PG Syllabus
+        </Link>
+        
+        
       </div>
+      <Outlet />
     </div>
   );
-}
+};
 
 export default Coursedetails;
