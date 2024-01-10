@@ -11,6 +11,8 @@ import JNTUGV from './components/Header/About/JNTUGV/JNTUGV';
 import Director from './components/Header/About/DIRECTOR/Director';
 import Coursedetails from './components/Header/Coursedetails/Coursedetails';
 import UGsyllabus from './components/Header/Coursedetails/UGsyllabus/UGsyllabus';
+import PGsyllabus from './components/Header/Coursedetails/PGsyllabus/PGsyllabus';
+
 import ProgrammesOffered from './components/Header/Programmes_offered/ProgrammesOffered';
 import Reports from './components/Header/Reports/Reports';
 import QAT from './components/Header/QAT/QAT';
@@ -64,6 +66,8 @@ function App() {
         
   <Route path="/about-course-details" element={<Coursedetails />}>
     <Route path="about-ug-syllabus" element={<UGsyllabus />} />
+    <Route path="about-pg-syllabus" element={<PGsyllabus />} />
+
     {/* Add more nested routes as needed */}
   </Route>
 
