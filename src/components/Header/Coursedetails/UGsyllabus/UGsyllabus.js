@@ -36,8 +36,8 @@ const UGsyllabus = () => {
       
   
       return filteredData.map((report) => (
-        <tr key={report.sno}>
-          <td>{report.sno}</td>
+        <tr key={report.department}>
+          
           <td>{report.department}</td>
           <td>
             <button className="button2" onClick={() => handleViewDownload(report.pdfPath)}>
@@ -102,7 +102,7 @@ const UGsyllabus = () => {
           <table className="syllabus-table">
             <thead>
               <tr>
-                <th>S.No</th>
+                
                 <th>Department</th>
                 <th>Syllabus</th>
               </tr>
