@@ -37,6 +37,7 @@ const PGsyllabus = () => {
         <tr key={report.department}>
           
           <td>{report.department}</td>
+          <td>{report.Specialization}</td>
           <td>
             <button className="button2" onClick={() => handleViewDownload(report.pdfPath)}>
               {report.name}
@@ -98,6 +99,7 @@ const PGsyllabus = () => {
               <tr>
                 
                 <th>Department</th>
+                <th>Course/Specialization</th>
                 <th>Syllabus</th>
               </tr>
             </thead>
