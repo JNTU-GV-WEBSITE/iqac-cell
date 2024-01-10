@@ -73,44 +73,60 @@ const Student = () => {
   return (
     <form className='SFF'> 
         <h2 className='SFF2'>STUDENT FEEDBACK FORM</h2>
-      <label>
+      <label className="form-label">
         1. Name : &nbsp;
+        <div className='inp1'>
         <input type="text" name="studentName" value={studentDetails.studentName} onChange={handleChange} />
+      </div>
       </label>
       
-      <label>
+      <label className="form-label">
         2. Roll Number : &nbsp;
+        <div className='inp1'>
         <input type="text" name="rollNumber" value={studentDetails.rollNumber} onChange={handleChange} />
+      </div>
       </label>
       
-      <label>
+      <label className="form-label">
         3. Degree : &nbsp;
+        <div className='inp1'>
         <input type="text" name="degree" value={studentDetails.degree} onChange={handleChange} />
+      </div>
       </label>
       
-      <label>
+      <label className="form-label">
         4. Specialization : &nbsp;
+        <div className='inp1'>
         <input type="text" name="specialization" value={studentDetails.specialization} onChange={handleChange} />
+      </div>
       </label>
       
-      <label>
+      <label className="form-label">
         5. Year of studying : &nbsp;
+        <div className='inp1'>
         <input type="text" name="yearOfStudying" value={studentDetails.yearOfStudying} onChange={handleChange} />
+      </div>
       </label>
       
-      <label>
+      <label className="form-label">
         6. Semester : &nbsp;
+        <div className='inp1'>
         <input type="text" name="academicYear" value={studentDetails.academicYear} onChange={handleChange} />
+      </div>
       </label>
       
-      <label>
+      <label className="form-label">
         7. Email ID : &nbsp;
+        <div className='inp1'>
         <input type="text" name="email" value={studentDetails.semester.email} onChange={handleSemesterChange} />
+      </div>
       </label>
 
-      <label>
+      <label className="form-label">
         8. Any other suggestions : &nbsp;
+        <div className='inp1'>
         <input type="text" name="suggestions" value={studentDetails.semester.suggestions} onChange={handleSemesterChange} />
+      </div>
       </label>
 
       <h3>Feedback Questionnaire</h3>

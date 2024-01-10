@@ -49,3 +49,23 @@ button1 {
 button:hover {
     background-color: #25221f;
 }
+
+.form-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Optional: Adjust margin/padding as needed */
+    margin-bottom: 10px; /* Example margin */
+  }
+  
+  .inp1 {
+    /* Align input container to the right */
+    display: flex;
+    justify-content: flex-end;
+    /* Optional: Adjust width as needed */
+    width: 50%; /* Example width */
+  }
+
+  .inp1 input{
+    width: 300px;
+  }
