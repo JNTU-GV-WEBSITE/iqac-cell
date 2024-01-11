@@ -34,7 +34,7 @@ function Home() {
                   <Link to="/about-syllabus" className="nav-link"><span role="img" aria-label="pointing-finger" className="blinking-text">👉🏻</span>Syllabus</Link><br /><br />
                   <Link to="/about-feedback-details" className="nav-link"><span role="img" aria-label="pointing-finger" className="blinking-text">👉🏻</span>Feedback details of curriculum</Link><br /><br />
                   <Link to="/AQAR" className="nav-link"><span role="img" aria-label="pointing-finger" className="blinking-text">👉🏻</span>Annual Quality Assurance Report</Link><br /><br />
-                  <Link to="/about-consulty-services" className="nav-link"><span role="img" aria-label="pointing-finger" className="blinking-text">👉🏻</span>Rules for Consulytancy Services</Link><br /><br />
+                  <Link to="/about-consulty-services" className="nav-link"><span role="img" aria-label="pointing-finger" className="blinking-text">👉🏻</span>Rules for Consultancy Services</Link><br /><br />
                   <Link to="/about-constitution-of-iqac" className="nav-link"><span role="img" aria-label="pointing-finger" className="blinking-text">👉🏻</span>Constitution of IQAC</Link><br /><br />
                   <Link to="/about-aicte-approvals" className="nav-link"><span role="img" aria-label="pointing-finger" className="blinking-text">👉🏻</span>AICTE Approvals</Link><br /><br />
                   {/* <Link to="/about-us/about-iqac" className="nav-link"><span role="img" aria-label="pointing-finger" className="blinking-text">👉🏻</span>NBA Accreditations</Link><br /> */}
