@@ -15,7 +15,7 @@ import PGsyllabus from './components/Header/Coursedetails/PGsyllabus/PGsyllabus'
 
 import ProgrammesOffered from './components/Header/Programmes_offered/ProgrammesOffered';
 import Reports from './components/Header/Reports/Reports';
-import QAT from './components/Header/QAT/QAT';
+// import QAT from './components/Header/QAT/QAT';
 import AQAR from './components/Header/AQAR/AQAR';
 import PdfViewer from './components/Header/AQAR/PdfViewer';
 import FeedbackformsMain from './components/Header/Feedbackforms/FeedbackformsMain';
@@ -75,7 +75,7 @@ function App() {
 
         
         <Route path="/programmes-offered" element={<ProgrammesOffered />} />
-        <Route path="/qat" element={<QAT />} />
+        {/* <Route path="/qat" element={<QAT />} /> */}
         <Route path="/aqar" element={<AQAR />} />
         <Route path="/pdf-viewer/:path" element={<PdfViewer />} />
       
