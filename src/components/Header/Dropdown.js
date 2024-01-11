@@ -1,7 +1,7 @@
 import "./Dropdown.css";
 import { Link, useNavigate } from "react-router-dom";
 import HomeIcon from "@mui/icons-material/Home";
-import GroupsIcon from "@mui/icons-material/Groups";
+// import GroupsIcon from "@mui/icons-material/Groups";
 //import SchoolIcon from "@mui/icons-material/School";
 // import PersonIcon from "@mui/icons-material/Person";
 import DraftsIcon from "@mui/icons-material/Drafts";
@@ -65,13 +65,13 @@ const Dropdown = () => {
           </div>
         </div>
 
-        <div class="dropdown">
+        {/* <div class="dropdown">
           <div className="dropbtn">
             <Link to="/qat" className="drop-icon" onClick={() => setMenuState(!menuState)}>
               <GroupsIcon /> QUALITY ASSURANCE TEAM
             </Link>
           </div>
-        </div>
+        </div> */}
 
 
         {/* <div class="dropdown">
