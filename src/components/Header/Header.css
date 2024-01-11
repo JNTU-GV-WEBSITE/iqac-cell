@@ -32,7 +32,7 @@
   .item {
     align-items: center;
     font-size: small;
-    /* margin-left: 5%; */
+    
   }
   @media (max-width: 767px) {
     .container {

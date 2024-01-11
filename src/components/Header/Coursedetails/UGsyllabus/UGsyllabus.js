@@ -66,7 +66,7 @@ const UGsyllabus = () => {
 
     return (
       <div>
-         <h2 className="ug">Syllabi of B.Tech. Full-Time Programmes</h2>
+         <h2 className="ug">Syllabi of B.Tech Full-Time Programmes</h2>
         <ul className="tab-navigation" role="tablist">
         <li role="tab" className={`tab-item ${activeTab === "R23" ? "active" : ""}`}>
           <button className={`tab-button ${activeTab === "R23" ? "active" : ""}`} onClick={() => handleTabClick("R23")}>

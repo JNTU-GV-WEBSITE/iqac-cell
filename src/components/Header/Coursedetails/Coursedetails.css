@@ -44,7 +44,11 @@
 
 .ug {
   color: #690001;
-  text-align: center;
+  margin-bottom: 20px; /* Add margin-bottom to create space between heading and table */
+}
+
+.pg {
+  color: #690001;
   margin-bottom: 20px; /* Add margin-bottom to create space between heading and table */
 }
   

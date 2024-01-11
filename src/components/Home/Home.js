@@ -34,7 +34,7 @@ function Home() {
       <div className="column">
         <ul>
         <Link to="/about-code-of-conduct" className="nav-link"><span role="img" aria-label="pointing-finger" className="blinking-text">👉🏻</span>Code of conduct</Link><br /><br />
-  <Link to="/about-syllabus" className="nav-link"><span role="img" aria-label="pointing-finger" className="blinking-text">👉🏻</span>Syllabus</Link><br /><br />
+  <Link to="/about-course-details/about-ug-syllabus" className="nav-link"><span role="img" aria-label="pointing-finger" className="blinking-text">👉🏻</span>Syllabus</Link><br /><br />
   <Link to="/about-feedback-details" className="nav-link"><span role="img" aria-label="pointing-finger" className="blinking-text">👉🏻</span>Feedback details of curriculum</Link><br /><br />
   <Link to="/AQAR" className="nav-link"><span role="img" aria-label="pointing-finger" className="blinking-text">👉🏻</span>Annual Quality Assurance Report</Link><br /><br />
  <Link to="/about-consulty-services" className="nav-link"><span role="img" aria-label="pointing-finger" className="blinking-text">👉🏻</span>Rules for Consulytancy Services</Link><br /><br />

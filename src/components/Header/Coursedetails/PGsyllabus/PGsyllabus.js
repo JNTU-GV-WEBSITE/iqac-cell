@@ -4,8 +4,8 @@ import '../Coursedetails.css';
 import PGSyllabusData from './PGsyllabusData';
 
 const PGsyllabus = () => {
-    const { path } = useParams(); 
-    const [activeTab, setActiveTab] = useState("R20"); 
+    const { path } = useParams(); // Get the 'path' parameter from the URL
+    const [activeTab, setActiveTab] = useState("R20"); // State to track active tab
   
     const handleViewDownload = (pdfPath) => {
       window.location.href = pdfPath;
@@ -16,7 +16,7 @@ const PGsyllabus = () => {
     };
   
     const renderSyllabusTableRows = () => {
-     
+      // Filter data based on the selected tab
       const filteredData = PGSyllabusData.filter((report) => {
         if (activeTab === "R20") {
           return report.sno <= 2;
@@ -37,7 +37,7 @@ const PGsyllabus = () => {
         <tr key={report.department}>
           
           <td>{report.department}</td>
-          <td>{report.Specialization}</td>
+          <td>{report.specialization}</td>
           <td>
             <button className="button2" onClick={() => handleViewDownload(report.pdfPath)}>
               {report.name}
@@ -65,9 +65,8 @@ const PGsyllabus = () => {
 
     return (
       <div>
-         <h2 className="ug">Syllabi of PG. Full-Time Programmes</h2>
+         <h2 className="pg">Syllabi of PG Full-Time Programmes</h2>
         <ul className="tab-navigation" role="tablist">
-       
         <li role="tab" className={`tab-item ${activeTab === "R20" ? "active" : ""}`}>
          <button className={`tab-button ${activeTab === "R20" ? "active" : ""}`} onClick={() => handleTabClick("R20")}>
           R20
@@ -99,7 +98,7 @@ const PGsyllabus = () => {
               <tr>
                 
                 <th>Department</th>
-                <th>Course/Specialization</th>
+                <th>Specialization</th>
                 <th>Syllabus</th>
               </tr>
             </thead>
