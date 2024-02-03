@@ -43,7 +43,6 @@ import Operational from './components/Home/Data/Operational';
 import Notifications from './components/Header/Notifications/Notifications';
 
 import AICTE from './components/Home/AICTE/AICTE';
-import AICTEReport from './components/Home/AICTE/AICTEData';
 
 function App() {
   const location = useLocation();
