@@ -109,7 +109,7 @@ const UGsyllabus = () => {
             </thead>
             <tbody>{renderSyllabusTableRows()}</tbody>
           </table>
-        )}
+        )}<br></br><br></br>
       </div>
     );
   };

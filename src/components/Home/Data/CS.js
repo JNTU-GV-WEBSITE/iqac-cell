@@ -6,14 +6,17 @@ function CS() {
   return (
     <div className="ABOUTmainContainer">
       <div className="allRightContent">
-        <div className="allRightContentHeading">Rules for Consulytancy Services</div>
-
         <div className="allRightContentProfile">
           {/* Profile information */}
           <center></center>
-          <hr />
           {/* Profile description */}
-          <p className="a"></p>
+         
+        <div className="allRightContentHeading">Rules for Consultancy Services</div>
+        <div className="allRightContentProfile">
+        <center></center>
+        <hr />
+
+          <div style={{ fontWeight: 'normal', textAlign: 'left',paddingLeft:'50px',paddingRight:'50px' }}>
           <Typography classname ="t">
             ❖ Clearly define the purpose and areas covered by the consultancy services.<br />
             ❖ Specify the required qualifications and expertise for consultants.<br />
@@ -31,8 +34,10 @@ function CS() {
             ❖ Specify required documentation and reporting procedures.<br />
             ❖ Implement mechanisms for ongoing improvement of consultancy services.
           </Typography>
+          </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }

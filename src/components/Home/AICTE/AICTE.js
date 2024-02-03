@@ -1,19 +1,19 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import './AQAR.css';
-import AnnualQualityAssuranceReportData from './AQARData';
+import './AICTE.css';
+import AICTEReportData from './AICTEData';
 
-const AQAR = () => {
-  const AnnualQualityAssuranceReport = AnnualQualityAssuranceReportData;
+const AICTE = () => {
+  const AICTEReport = AICTEReportData;
   const { path } = useParams(); // Get the 'path' parameter from the URL
 
   const handleViewDownload = (pdfPath) => {
     window.location.href = pdfPath;
   };
 
-  const renderAQARTableRows = () => {
-    const aqarReports = AnnualQualityAssuranceReport.slice(0, 3); // First three reports for AQAR
-    return aqarReports.map((report) => (
+  const renderAICTETableRows = () => {
+    const aicteReports = AICTEReport.slice(0, 10); // First three reports for AQAR
+    return aicteReports.map((report) => (
       <tr key={report.sno}>
         <td>{report.sno}</td>
         <td>
@@ -25,19 +25,19 @@ const AQAR = () => {
     ));
   };
 
-  const renderAARTableRows = () => {
-    const aarReports = AnnualQualityAssuranceReport.slice(3); // Remaining reports for AAR
-    return aarReports.map((report) => (
-      <tr key={report.sno}>
-        <td>{report.sno}</td>
-        <td>
-          <button onClick={() => handleViewDownload(report.pdfPath)}>
-            {report.name}
-          </button>
-        </td>
-      </tr>
-    ));
-  };
+  // const renderAARTableRows = () => {
+  //   const aarReports = AITCEReport.slice(3); // Remaining reports for AAR
+  //   return aarReports.map((report) => (
+  //     <tr key={report.sno}>
+  //       <td>{report.sno}</td>
+  //       <td>
+  //         <button onClick={() => handleViewDownload(report.pdfPath)}>
+  //           {report.name}
+  //         </button>
+  //       </td>
+  //     </tr>
+  //   ));
+  // };
 
   const PdfViewer = () => {
     return (
@@ -50,21 +50,21 @@ const AQAR = () => {
 
   return (
     <div>
-      <h2 className='AQAR2'>Annual Quality Assurance Report (AQAR)</h2>
+      <h2 className='AICTE2'>All India Council for Technical Education (AICTE)</h2>
       {path ? ( // Render PdfViewer if 'path' parameter is present
         <PdfViewer />
       ) : (
         <table>
           <thead>
             <tr>
-              <th>AQAR Year</th>
+              <th>AICTE Year</th>
               <th>Download</th>
             </tr>
           </thead>
-          <tbody>{renderAQARTableRows()}</tbody>
+          <tbody>{renderAICTETableRows()}</tbody>
         </table>
-      )}
-      <h2 className='AAR2'>Academic Audit Report (AAR)</h2>
+      )}<br></br><br></br>
+      {/* <h2 className='AAR2'>Academic Audit Report (AAR)</h2>
       {path ? ( // Render PdfViewer if 'path' parameter is present
         <PdfViewer />
       ) : (
@@ -77,9 +77,9 @@ const AQAR = () => {
           </thead>
           <tbody>{renderAARTableRows()}</tbody>
         </table>
-      )}<br></br><br></br>
+      )} */}
     </div>
   );
 };
 
-export default AQAR;
+export default AICTE;

@@ -9,6 +9,8 @@ import GridViewRoundedIcon from "@mui/icons-material/GridViewRounded";
 import ApartmentIcon from "@mui/icons-material/Apartment";
 import DescriptionIcon from "@mui/icons-material/Description";
 import MenuIcon from "@mui/icons-material/Menu";
+import CampaignIcon from '@mui/icons-material/Campaign';
+
 import { useState } from "react";
 // import { PiExamFill } from "react-icons/pi";
 
@@ -78,6 +80,14 @@ const Dropdown = () => {
             </Link>
           </div>
         </div> 
+
+        <div class="dropdown">
+          <div className="dropbtn">
+          <Link to="/notifications" className="drop-icon" onClick={() => setMenuState(!menuState)}>
+          <CampaignIcon /> NOTIFICATIONS
+        </Link>
+          </div>
+        </div>
 
 
         {/* <div class="dropdown">

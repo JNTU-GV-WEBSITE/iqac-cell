@@ -31,7 +31,7 @@ function JNTUGV() {
               catering education in different Engineering, Pharmacy and
               Management departments.
             
-          </Typography>
+          </Typography><br></br><br></br>
           </div>
         </div>
       </div>
