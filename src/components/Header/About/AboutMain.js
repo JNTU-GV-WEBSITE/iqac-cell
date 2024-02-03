@@ -31,6 +31,14 @@ const AboutMain = () => {
         >
           DIRECTOR
         </Link>
+        <Link
+          to="about-coordinator"
+          className={`menuButton ${
+            location.pathname === "/about-us/about-coordinator" ? "active" : ""
+          }`}
+        >
+          CO-ORDINATOR
+        </Link>
         
       </div>
       <Outlet />
