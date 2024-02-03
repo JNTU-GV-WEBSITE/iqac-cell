@@ -24,19 +24,19 @@ function IQAC() {
             force for ushering in quality by working out intervention strategies to remove deficiencies and enhance quality.</Typography><br/>
 
             <Typography className="t">Internal Quality Assurance Cell (IQAC) to periodically assess and suggest measures to upgrade the 
-            quality in the overall performance of an academic institution. With this objective in mind JNTUK- University 
+            quality in the overall performance of an academic institution. With this objective in mind JNTUGV-CEV - University 
             College of Engineering, Vizianagaram has formed an IQAC cell to ensure continuous quality enhancement and 
             sustenance in its academic as well administrative activities. As quality improvement is a continuous process 
-            the IQAC has been playing a vital role in the post-accreditation phase of JNTUK- University College of Engineering, 
+            the IQAC has been playing a vital role in the post-accreditation phase of JNTUGV-CEV- University College of Engineering, 
             Vizianagaram as it is committed to achieve academic excellence.</Typography><br/>
 
-            <Typography className="t">JNTUK- University College of Engineering, Vizianagaram has established the Internal Quality Assurance Cell (IQAC) 
+            <Typography className="t">JNTUGV-CEV- University College of Engineering, Vizianagaram has established the Internal Quality Assurance Cell (IQAC) 
             as a post accreditation quality sustenance measure. The Cell comprises of different committees to assess, monitor, 
             and advise on different quality aspects of the overall functioning of the University.</Typography>
           
           <h2 className="vision">Vision</h2>
           <Typography className="t">
-          To create the bench mark in defining the quality of JNTUK-UCEV as a professional higher education in Engineering and 
+          To create the bench mark in defining the quality of JNTUGV-CEV as a professional higher education in Engineering and 
           Technology in quality evaluation in teaching, learning, research & development, a quality culture with conscious, reliable 
           and transparent efforts through a combination of self and external quality evaluation, promotion and sustenance of the 
           institutional and human values to meet global standards</Typography>
@@ -51,7 +51,7 @@ function IQAC() {
           ❖ To build association with stakeholders and to stimulate Social Responsibility.
           </Typography>
 
-          <h2 className="ss">Strategies & objectives</h2>
+          {/* <h2 className="ss">Strategies & objectives</h2>
           <Typography className="t">
           ❖ Development and application of quality benchmarks/parameters academic and administrative activities of the University.<br />
           ❖ Facilitating the creation of a learner-centric environment conducive for quality education and faculty maturation to adopt the required knowledge and technology for participatory teaching and learning process.<br />
@@ -67,14 +67,14 @@ function IQAC() {
           </Typography>
 
           <h2 className="func">Functions</h2>
-          <Typography className="t">❖ Developing ethical work culture in JNTUK-UCEV.<br />
+          <Typography className="t">❖ Developing ethical work culture in JNTUGV-CEV.<br />
           ❖ Establish and implement quality benchmarks for academic and administrative activities.<br />
           ❖ Plays a vital role in the Institute for coordinating various activities ensuring quality including adoption and dissemination of best methods and practices.<br />
           ❖ Organizing inter and intra Institutional Workshops, Seminars, awareness programs, Project Exhibition and Research activities.<br />
           ❖ Ensuring a learner-centric ambience conducive for quality education and for continual improvement.<br />
           ❖ Emphasize faculty expertise to adopt the knowledge, technology and innovations for participatory teaching and learning process.<br />
           ❖ Conduct periodic audits of academic, administrative and research activities for quality assessment.<br />
-          ❖ Collection of feedback from different stakeholders, Analyze and suggest remedial actions for all stakeholder satisfaction.
+          ❖ Collection of feedback from different stakeholders, Analyze and suggest remedial actions for all stakeholder satisfaction.<br />
           ❖ Preparing Annual Quality Assurance Report (AQAR) as per norms.</Typography>
 
           <h2 className="ben">Benefits</h2>
@@ -109,7 +109,7 @@ function IQAC() {
          ❖ The AQAR shall be approved by the statutory bodies of the University (such as Syndicate, Governing Council/Board) for the follow up action for necessary quality enhancement measures.<br />
          ❖ The Universities shall regularly submit the AQARs to the NAAC/other accreditation bodies.<br />
          ❖ All Universities shall submit AQARs and/or Quality Radars (QRs) and follow up reports of AQARs to the UGC.<br />
-         </Typography>
+         </Typography> */}
          </div>
         </div>
       </div>

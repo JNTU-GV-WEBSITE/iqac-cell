@@ -19,7 +19,7 @@ function Home() {
 
                   <Link to="/about-us/about-iqac" className="nav-link"><span role="img" aria-label="pointing-finger" className="blinking-text">👉🏻</span>About IQAC</Link><br /><br />
                   <Link to="/about-us/about-jntugv" className="nav-link"><span role="img" aria-label="pointing-finger" className="blinking-text">👉🏻</span>About JNTUGV</Link><br /><br />
-                  <Link to="/about-iiqa" className="nav-link"><span role="img" aria-label="pointing-finger" className="blinking-text">👉🏻</span>Institutional Information for Quality Assessment(IIQA)</Link><br /><br />
+                  <Link to="/about-us/about-iqac" className="nav-link"><span role="img" aria-label="pointing-finger" className="blinking-text">👉🏻</span>Institutional Information for Quality Assessment(IIQA)</Link><br /><br />
 
                   {/* <Link to="/about-naac-ssr" className="nav-link"><span role="img" aria-label="pointing-finger" className="blinking-text">👉🏻</span>NAAC Self Study Report(SSR)</Link><br /><br /> */}
                   <Link to="/about-faculty-awards" className="nav-link"><span role="img" aria-label="pointing-finger" className="blinking-text">👉🏻</span> Faculty Awards</Link><br /><br />

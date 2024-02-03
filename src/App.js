@@ -15,7 +15,7 @@ import PGsyllabus from './components/Header/Coursedetails/PGsyllabus/PGsyllabus'
 
 import ProgrammesOffered from './components/Header/Programmes_offered/ProgrammesOffered';
 import Reports from './components/Header/Reports/Reports';
-// import QAT from './components/Header/QAT/QAT';
+ import QAT from './components/Header/QAT/QAT';
 import AQAR from './components/Header/AQAR/AQAR';
 import PdfViewer from './components/Header/AQAR/PdfViewer';
 import FeedbackformsMain from './components/Header/Feedbackforms/FeedbackformsMain';
@@ -39,6 +39,7 @@ import PCOI from './components/Home/Data/PCOI';
 import NewsandEvents from './components/Home/NewsandEvents/NewsandEvents';
 import Scrollbar from './components/Home/NewsandEvents/Scrollbar';
 import UpdatePanel from './components/Home/UpdatePanel/UpdatePanel';
+import Coordinator from './components/Header/About/Coordinator/Coordinato';
 
 
 
@@ -60,6 +61,7 @@ function App() {
           <Route path="about-iqac" element={<IQAC />} />
           <Route path="about-jntugv" element={<JNTUGV />} />
           <Route path="about-director" element={<Director />} />
+          <Route path="about-coordinator" element={<Coordinator />} />
         </Route>
         <Route path="/reports" element={<Reports />} />
 
@@ -75,7 +77,7 @@ function App() {
 
         
         <Route path="/programmes-offered" element={<ProgrammesOffered />} />
-        {/* <Route path="/qat" element={<QAT />} /> */}
+         <Route path="/qat" element={<QAT />} /> 
         <Route path="/aqar" element={<AQAR />} />
         <Route path="/pdf-viewer/:path" element={<PdfViewer />} />
       
