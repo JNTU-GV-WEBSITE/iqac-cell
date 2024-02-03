@@ -33,7 +33,7 @@ const QAT = () => {
           </tr>
         </thead>
         <tbody>{renderTableRows()}</tbody>
-      </table>
+      </table><br></br><br></br>
     </div>
   );
 };

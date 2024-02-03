@@ -15,7 +15,7 @@ import PGsyllabus from './components/Header/Coursedetails/PGsyllabus/PGsyllabus'
 
 import ProgrammesOffered from './components/Header/Programmes_offered/ProgrammesOffered';
 import Reports from './components/Header/Reports/Reports';
- import QAT from './components/Header/QAT/QAT';
+import QAT from './components/Header/QAT/QAT';
 import AQAR from './components/Header/AQAR/AQAR';
 import PdfViewer from './components/Header/AQAR/PdfViewer';
 import FeedbackformsMain from './components/Header/Feedbackforms/FeedbackformsMain';
@@ -28,23 +28,22 @@ import IIQA from './components/Home/Data/IIQA';
 import NAAC from './components/Home/Data/NAAC';
 import NAACSSR from './components/Home/Data/NAACSSR';
 import FA from './components/Home/Data/FA';
-import Acts from './components/Home/Data/Acts';
-import Policies from './components/Home/Data/Policies';
-import Coc from './components/Home/Data/Coc';
-import Syllabus from './components/Home/Data/Syllabus';
-import Feedback from './components/Home/Data/Feedback';
-import Constitution from './components/Home/Data/Constitution';
-import AICTE from './components/Home/Data/AICTE';
+// import AICTE from './components/Home/Data/AICTE';
 import PCOI from './components/Home/Data/PCOI';
-import NewsandEvents from './components/Home/NewsandEvents/NewsandEvents';
-import Scrollbar from './components/Home/NewsandEvents/Scrollbar';
-import UpdatePanel from './components/Home/UpdatePanel/UpdatePanel';
+// import NewsandEvents from './components/Home/NewsandEvents/NewsandEvents';
+// import Scrollbar from './components/Home/NewsandEvents/Scrollbar';
+// import UpdatePanel from './components/Home/UpdatePanel/UpdatePanel';
 import Coordinator from './components/Header/About/Coordinator/Coordinato';
 
+import Strategies from './components/Home/Data/Strategies';
+import Functions from './components/Home/Data/Functions';
+import Benefits from './components/Home/Data/Benefits';
+import Monitoring from './components/Home/Data/Monitoring';
+import Operational from './components/Home/Data/Operational';
+import Notifications from './components/Header/Notifications/Notifications';
 
-
-
-
+import AICTE from './components/Home/AICTE/AICTE';
+import AICTEReport from './components/Home/AICTE/AICTEData';
 
 function App() {
   const location = useLocation();
@@ -93,17 +92,21 @@ function App() {
         <Route path="/about-naac-criteria" element={<NAAC />} /> 
         <Route path="/about-naac-ssr" element={<NAACSSR />} /> 
         <Route path="/about-faculty-awards" element={<FA />} />
-        <Route path="/about-acts-statuses" element={<Acts />} />
-        <Route path="/about-policies" element={<Policies />} />
-        <Route path="/about-code-of-conduct" element={<Coc />} />
-        <Route path="/about-syllabus" element={<Syllabus />} />
-        <Route path="/about-feedback-details" element={<Feedback />} />
-        <Route path="/about-constitution-of-iqac" element={<Constitution />} />
+        <Route path="/about-strategies" element={<Strategies />} />
+        <Route path="/about-functions" element={<Functions />} />
+        <Route path="/about-benefits" element={<Benefits />} />
+        <Route path="/about-course-details/about-ug-syllabus" element={<UGsyllabus />} />
+        <Route path="/feedbackforms/faculty-form" element={<Faculty />} />
+        <Route path="/about-operational" element={<Operational />} />
+        <Route path="/about-monitoring" element={<Monitoring />} />
         <Route path="/about-aicte-approvals" element={<AICTE />} />
         <Route path="/about-pcoi" element={<PCOI />} />
-        <Route path="/news-and-events" element={<NewsandEvents />} /> 
+        {/* <Route path="/news-and-events" element={<NewsandEvents />} /> 
         <Route path="/scrolling-bar" element={<Scrollbar />} />
-        <Route path="/update-panel" element={<UpdatePanel />} />
+        <Route path="/update-panel" element={<UpdatePanel />} /> */}
+
+        <Route path="/notifications" element={<Notifications />} /> 
+
         </Routes>
 
         

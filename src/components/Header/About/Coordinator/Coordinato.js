@@ -185,7 +185,7 @@ function Coordinator() {
         <p className="ADsub">Journal Publications</p>
         <p className="ADsub">Book Chapters Published</p>
         <p className="ADsub">Patents/Monograms Published</p>
-        <p className="ADsub">Other Information</p>
+        <p className="ADsub">Other Information</p><br></br><br></br>
     
       
        

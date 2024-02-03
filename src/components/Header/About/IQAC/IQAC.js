@@ -49,7 +49,7 @@ function IQAC() {
           ❖ To develop an Institutional MIS this will provide the quality information about the institution.<br />
           ❖ To ensure the adequacy, timely maintenance and smooth functioning of the support structure.<br />
           ❖ To build association with stakeholders and to stimulate Social Responsibility.
-          </Typography>
+          </Typography><br></br><br></br>
 
           {/* <h2 className="ss">Strategies & objectives</h2>
           <Typography className="t">

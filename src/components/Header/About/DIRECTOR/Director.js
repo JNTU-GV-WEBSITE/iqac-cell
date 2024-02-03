@@ -166,7 +166,7 @@ function Director() {
           kind!
         </p>
         <p>
-          ❖ Given about 23 webinars as Resource person during 2020-21 Lock down.
+          ❖ Given about 23 webinars as Resource person during 2020-21 Lock down.<br></br><br></br>
         </p>
         </div>
       </div>
