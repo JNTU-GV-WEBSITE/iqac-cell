@@ -167,7 +167,7 @@ function Footer() {
       <div className="subcontainer3Footer">
         {/* Contact Us */}
         <p className="subheadingFooter">Contact Us :</p>
-        <p>
+        <p className="T">
           JAWAHARLAL NEHRU TECHNOLOGICAL UNIVERSITY-GURAJADA
           VIZIANAGARAM,DWARAPUDI, VIZIANAGARAM, ANDHRA PRADESH - 535 003, Andhra
           Pradesh, INDIA.
@@ -222,7 +222,7 @@ function Footer() {
 
       {/* Copyright  */}
       <div className="mobilefooter">
-        <p>© Copyright 2023 JNTU-GV Vizianagaram. All Rights Reserved.</p>
+        <p className="T">© Copyright 2023 JNTU-GV Vizianagaram. All Rights Reserved.</p>
       </div>
     </div>
   );

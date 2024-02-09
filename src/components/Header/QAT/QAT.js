@@ -23,7 +23,7 @@ const QAT = () => {
   return (
     <div>
       <h2 className='QAT2'>IQAC Members</h2>
-      <table>
+      <table className='qat'>
         <thead>
           <tr>
             <th>S.No</th>

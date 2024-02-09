@@ -26,8 +26,22 @@ const AQAR = () => {
   };
 
   const renderAARTableRows = () => {
-    const aarReports = AnnualQualityAssuranceReport.slice(3); // Remaining reports for AAR
+    const aarReports = AnnualQualityAssuranceReport.slice(3, 6); // Next three reports for AAR
     return aarReports.map((report) => (
+      <tr key={report.sno}>
+        <td>{report.sno}</td>
+        <td>
+          <button onClick={() => handleViewDownload(report.pdfPath)}>
+            {report.name}
+          </button>
+        </td>
+      </tr>
+    ));
+  };
+
+  const renderAuditReportTableRows = () => {
+    const auditReports = AnnualQualityAssuranceReport.slice(6); // Remaining reports for Audit Reports
+    return auditReports.map((report) => (
       <tr key={report.sno}>
         <td>{report.sno}</td>
         <td>
@@ -54,7 +68,7 @@ const AQAR = () => {
       {path ? ( // Render PdfViewer if 'path' parameter is present
         <PdfViewer />
       ) : (
-        <table>
+        <table className='reports'>
           <thead>
             <tr>
               <th>AQAR Year</th>
@@ -64,11 +78,11 @@ const AQAR = () => {
           <tbody>{renderAQARTableRows()}</tbody>
         </table>
       )}
-      <h2 className='AAR2'>Academic Audit Report (AAR)</h2>
+      <h2 className='AQAR2'>Academic Audit Report (AAR)</h2>
       {path ? ( // Render PdfViewer if 'path' parameter is present
         <PdfViewer />
       ) : (
-        <table>
+        <table className='reports'>
           <thead>
             <tr>
               <th>AAR Year</th>
@@ -77,7 +91,22 @@ const AQAR = () => {
           </thead>
           <tbody>{renderAARTableRows()}</tbody>
         </table>
-      )}<br></br><br></br>
+      )}
+      <h2 className='AR2'>Audit Reports</h2>
+      {path ? ( // Render PdfViewer if 'path' parameter is present
+        <PdfViewer />
+      ) : (
+        <table className='reports'>
+          <thead>
+            <tr>
+              <th>Year</th>
+              <th>Download</th>
+            </tr>
+          </thead>
+          <tbody>{renderAuditReportTableRows()}</tbody>
+        </table>
+      )}
+      <br></br><br></br>
     </div>
   );
 };

@@ -3,7 +3,7 @@ import './App.css';
 
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
-import { Route, Routes, useLocation } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import Footer from './components/Footer/Footer';
 import AboutMain from './components/Header/About/AboutMain';
 import IQAC from './components/Header/About/IQAC/IQAC';
@@ -41,14 +41,17 @@ import Benefits from './components/Home/Data/Benefits';
 import Monitoring from './components/Home/Data/Monitoring';
 import Operational from './components/Home/Data/Operational';
 import Notifications from './components/Header/Notifications/Notifications';
+import Outcomes from './components/Home/Data/Outcomes';
 
 import AICTE from './components/Home/AICTE/AICTE';
+import MOU from './components/Home/Data/MOU';
+import Events from './components/Home/Data/Events';
 
 function App() {
-  const location = useLocation();
+ // const location = useLocation();
 
   // Check if the current route is the home page ("/")
-  const isHomePage = location.pathname === '/';
+  //const isHomePage = location.pathname === '/';
 
   return (
     <div>
@@ -76,7 +79,7 @@ function App() {
         
         <Route path="/programmes-offered" element={<ProgrammesOffered />} />
          <Route path="/qat" element={<QAT />} /> 
-        <Route path="/aqar" element={<AQAR />} />
+        <Route path="/AQAR" element={<AQAR />} />
         <Route path="/pdf-viewer/:path" element={<PdfViewer />} />
       
       <Route path="/feedbackforms" element={<FeedbackformsMain />}>
@@ -100,6 +103,9 @@ function App() {
         <Route path="/about-monitoring" element={<Monitoring />} />
         <Route path="/about-aicte-approvals" element={<AICTE />} />
         <Route path="/about-pcoi" element={<PCOI />} />
+        <Route path="/about-mou" element={<MOU />} />
+        <Route path="/about-events" element={<Events />} />
+        <Route path="/about-outcomes" element={<Outcomes />} />
         {/* <Route path="/news-and-events" element={<NewsandEvents />} /> 
         <Route path="/scrolling-bar" element={<Scrollbar />} />
         <Route path="/update-panel" element={<UpdatePanel />} /> */}
@@ -110,8 +116,9 @@ function App() {
 
         
 
-      {/* Conditionally render the Footer only on the home page */}
-      {isHomePage && <Footer />}
+      
+      {/* {isHomePage && <Footer />} */}
+      <Footer />
     </div>
   );
 }

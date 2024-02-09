@@ -2,6 +2,7 @@
     display: flex;
     padding-left: 40px;
     padding-top: 10px;
+    margin-bottom: 50px;
   }
   
   .ABOUTallLeftMenu{
@@ -10,31 +11,33 @@
   }
   
   
-  .ABOUTallLeftMenu .menubutton {
-    
-    display: flex;
-    flex-direction: column;
-    background-color: grey;
-    color: white;
-    text-decoration: none;
-    width: 300px; 
-    height: 60px; /* Set a fixed height for your buttons */
-    display: flex;
-    /* justify-content: center;
-    align-items: center; */
-    margin-top: 10px;
-    font-weight: bold;
-    margin-left: 13%;
+  .ABOUTallLeftMenu .menuButton {
+    width: 240px !important;
+    height: 60px !important;
+    flex-shrink: 0;
+    border-radius: 7px !important;
+    box-shadow: 0px 4px 22px 0px rgba(123, 124, 134, 0.36) !important;
+    padding: 10px !important;
+    text-align: center !important;
+    text-decoration: none !important;
+    cursor: pointer !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    border: 1px solid #035a5a !important;
+    background: #fff !important;
+    color: black !important;
   }
   
-  /* Hover state */
-  .ABOUTallLeftMenuAOP .menubutton:hover {
-    background-color: #2e0669;
+  .ABOUTallLeftMenu .menuButton:hover {
+    background-color: #035a5a !important;
+    color: #fff !important;
   }
   
   /* Selected state */
-  .ABOUTallLeftMenuAOP .menubutton.active {
-    background-color: #2e0669;
+  .ABOUTallLeftMenu .menuButton.active {
+    background: #035a5a !important;
+    color: white !important;
   }
   
   
@@ -71,6 +74,10 @@
  .t{
   text-align: left;
  }
+
+ .v {
+  font-weight: lighter;
+}
   
   
   /* .ABOUTmainContainer {

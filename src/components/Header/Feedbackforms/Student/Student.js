@@ -130,7 +130,7 @@ const Student = () => {
       </label>
 
       <h3>Feedback Questionnaire</h3>
-      <table style={{ width: '80%' }}>
+      <table style={{ width: '80%' }} class='table'>
         <thead>
           <tr>
             <th>Parameter</th>

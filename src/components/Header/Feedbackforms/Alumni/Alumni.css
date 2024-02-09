@@ -3,7 +3,7 @@
 .AFF2 {
     text-align: center;
     color: #f3f2f4;
-    background-color: #2e0669;
+    background-color: #035a5a;
     padding: 10px;
 }
 
@@ -44,7 +44,7 @@ input {
 }
 
 button {
-    background-color: #690001;
+    background-color: #035a5a;
     color: white;
     padding: 10px 15px;
     border: none;

@@ -1,5 +1,5 @@
 import Dropdown from "./Dropdown";
-import myImage from "./logo.jpg";
+import myImage from "./logo1.jpg";
 
 import "./Header.css";
 const Header = () => {
@@ -11,8 +11,9 @@ const Header = () => {
           <h1 className="logo-text">
             JAWAHARLAL NEHRU TECHNOLOGICAL UNIVERSITY GURAJADA VIZIANAGARAM
             <br />
-            VIZIANAGARAM-535 003, A.P <br />
-            <h6>(Established by Andhra Pradesh Act No.22 of 2021)</h6>
+            VIZIANAGARAM-535 003, A.P
+            <h6>(Established by Andhra Pradesh Act No.22 of 2021)</h6><br/>
+            <h3 className="heading">INTERNAL QUALITY ASSURANCE CELL [IQAC]</h3>
           </h1>
         </div>
       </div>

@@ -31,7 +31,16 @@ function JNTUGV() {
               catering education in different Engineering, Pharmacy and
               Management departments.
             
-          </Typography><br></br><br></br>
+          </Typography>
+          <div className="allRightContentHeading">Vision</div><hr />
+          <p className="v">❖ To emerge as a premier technical Institution in the field of engineering and research with a focus to produce professionally competent and
+socially sensitive engineers capable of working in a multidisciplinary global environment.</p>
+
+<div className="allRightContentHeading">Mission</div><hr />
+<p className="v">❖ To provide high-quality technical education through a creative balance of academia and industry by adopting highly effective teaching-learning processes.</p>
+<p className="v">❖ To promote multidisciplinary research with a global perspective to attain professional excellence.</p>
+<p className="v">❖ To establish standards that inculcate ethical and moral values that contribute to the growth in the career and development of society.</p>
+          <br></br><br></br>
           </div>
         </div>
       </div>

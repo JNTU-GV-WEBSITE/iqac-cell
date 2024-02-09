@@ -34,14 +34,14 @@ function IQAC() {
             as a post accreditation quality sustenance measure. The Cell comprises of different committees to assess, monitor, 
             and advise on different quality aspects of the overall functioning of the University.</Typography>
           
-          <h2 className="vision">Vision</h2>
+          <h2 className="allRightContentHeading">Vision</h2>  <hr />
           <Typography className="t">
           To create the bench mark in defining the quality of JNTUGV-CEV as a professional higher education in Engineering and 
           Technology in quality evaluation in teaching, learning, research & development, a quality culture with conscious, reliable 
           and transparent efforts through a combination of self and external quality evaluation, promotion and sustenance of the 
           institutional and human values to meet global standards</Typography>
 
-          <h2 className="mission">Mission</h2>
+          <h2 className="allRightContentHeading">Mission</h2>  <hr />
           <Typography className="t">❖ To channelize and systematize the efforts and measures towards academic excellence in order to enhance quality.<br />
           ❖ To encourage departments to establish student Learning-centric environment to use ICT tools for teaching and learning process and to &nbsp;inculcate value–based education system.<br />
           ❖ To encourage Departments to organize Seminars, Workshops, Orientation and Faculty Development Program.<br />

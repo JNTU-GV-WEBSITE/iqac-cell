@@ -3,7 +3,7 @@
 .SFF2 {
     text-align: center;
     color: #f3f2f4;
-    background-color: #2e0669;
+    background-color: #035a5a;
     padding: 10px; /* Increased padding for better visibility */
 }
 
@@ -39,7 +39,7 @@ input {
 }
 
 button1 {
-    background-color: #690001;
+    background-color: #035a5a;
     color: white;
     padding: 10px 15px;
     border: none;
@@ -70,4 +70,8 @@ button:hover {
 
   .inp1 input{
     width: 300px;
+  }
+
+  .table th {
+    background-color: #daefef;
   }

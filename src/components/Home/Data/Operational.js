@@ -30,7 +30,7 @@ function Operational() {
           ❖ Acting as a nodal agency of the University for coordinating quality-related activities, including adoption and dissemination of good practices.<br />
           ❖ Development and maintenance of Institutional database through MIS for the purpose of maintaining /enhancing the institutional quality.<br />
           ❖ Development of Quality Culture in University.
-         </Typography>
+         </Typography><br />
 
            </div>
         </div>
