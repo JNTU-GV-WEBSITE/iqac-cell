@@ -49,7 +49,7 @@
 .columns-container {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-between; */
+  
   justify-content: center;
   padding-left: 100px;
 }
@@ -185,14 +185,31 @@
   scroll-padding: 10px;
 }
 
+.link-container {
+  /* border: 2px solid #1b1b1b ; */
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.link-wrapper {
+  
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+
+
+
 .nav-link {
-  /* Add your styles for the Link component here */
   color: black;
   text-decoration: none;
   font-size: 20px;
   font-weight: bold;
-
+  
 }
+
+
 
 .nav-link:hover {
   /* Add your styles for the Link component on hover here */
@@ -206,19 +223,25 @@
 }
 
 .iqacMessageContainer {
-  background-color: #f0f0f0;
-  padding: 20px;
-  margin: 20px 0;
+  background-color: #DCDCDC;
+    padding: 20px;
+    margin: 20px 0;
 }
 
 .iqacMessage {
   text-align: center;
+  font-weight: bold;
+}
+
+
+.iqacmsg{
+  color: orange;
 }
 
 .signature {
   text-align: right;
-  margin-top: 20px;
-  font-style: italic;
+    margin-top: 20px;
+    font-style: italic;
 }
 
 
@@ -262,13 +285,14 @@
   }
 
 
-  .columns-container {
-    justify-content: start;
-    padding-left: 0px;
-
+  /* .columns-container {
+    display: flex;
+    justify-content: space-around; 
   }
-
+  
   .column {
-    width: auto;
-  }
+    text-align: left;
+    width: 50%; 
+  } */
+  
 }

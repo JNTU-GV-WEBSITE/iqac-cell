@@ -26,7 +26,7 @@ function Benefits() {
 ❖ Provide a sound basis for decision-making to improve institutional functioning.<br />
 ❖ Act as a dynamic system for quality changes in the University.<br />
 ❖ Build an organized methodology of documentation and internal communication.
-</Typography>
+</Typography><br />
 
            </div>
         </div>

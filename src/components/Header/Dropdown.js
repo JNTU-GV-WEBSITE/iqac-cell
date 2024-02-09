@@ -11,6 +11,7 @@ import DescriptionIcon from "@mui/icons-material/Description";
 import MenuIcon from "@mui/icons-material/Menu";
 import CampaignIcon from '@mui/icons-material/Campaign';
 
+
 import { useState } from "react";
 // import { PiExamFill } from "react-icons/pi";
 
@@ -33,17 +34,22 @@ const Dropdown = () => {
         MENU
       </div>
       <div className={menuState ? "menu-on-options" : "menu-off-options"}>
-        <div class="dropdown">
-          <div class="dropbtn" onClick={homeHandler}>
-            <div className="drop-icon" onClick={() => setMenuState(!menuState)}>
-              <HomeIcon /> HOME
-            </div>
-          </div>
-        </div>
+        
+      <div className="dropdown">
+  <div className="dropbtn" onClick={homeHandler}>
+    <div className="drop-icon" style={{ verticalAlign: 'middle' }}>
+      <HomeIcon />
+    </div>
+    HOME
+  </div>
+</div>
+
+
 
         <div class="dropdown">
           <div class="dropbtn">
-            <ApartmentIcon height={16}/> ABOUT
+            <ApartmentIcon /> &nbsp;
+            ABOUT
           </div>
           <div class="dropdown-content" onClick={() => setMenuState(!menuState)}>
             <button >
@@ -73,53 +79,36 @@ const Dropdown = () => {
           </div>
         </div>
 
-         <div class="dropdown">
+        <div className="dropdown">
           <div className="dropbtn">
-            <Link to="/qat" className="drop-icon" onClick={() => setMenuState(!menuState)}>
-              <GroupsIcon /> QUALITY ASSURANCE TEAM
+            <GroupsIcon />
+            <Link to="/qat" className="link-btn">
+              QUALITY ASSURANCE TEAM
             </Link>
-          </div>
-        </div> 
-
-        <div class="dropdown">
-          <div className="dropbtn">
-          <Link to="/notifications" className="drop-icon" onClick={() => setMenuState(!menuState)}>
-          <CampaignIcon /> NOTIFICATIONS
-        </Link>
           </div>
         </div>
 
-
-        {/* <div class="dropdown">
-          <div class="dropbtn">
-            <GroupsIcon /> NIRF
-          </div>
-          <div class="dropdown-content" onClick={() => setMenuState(!menuState)}>
-            <button>
-              {" "}
-              {/* <Link
-                className="link-btn"
-                to="/administration/chairpersons"
-                target="_self"
-              >
-                Chairpersons
-              </Link> 
-            </button>
-          </div>
-        </div> */}
-
-
-        <div class="dropdown">
+        <div className="dropdown">
           <div className="dropbtn">
-            <Link to="/aqar" className="drop-icon" onClick={() => setMenuState(!menuState)}>
-              <DraftsIcon /> AQAR
+            <CampaignIcon />
+            <Link to="/notifications" className="link-btn">
+              NOTIFICATIONS
+            </Link>
+          </div>
+        </div>
+
+        <div className="dropdown">
+          <div className="dropbtn">
+            <DescriptionIcon />
+            <Link to="/AQAR" className="link-btn">
+              REPORTS
             </Link>
           </div>
         </div>
 
         <div class="dropdown">
           <div class="dropbtn">
-            <GridViewRoundedIcon /> COURSE DETAILS
+            <GridViewRoundedIcon />&nbsp;  COURSE DETAILS
           </div>
           <div class="dropdown-content" onClick={() => setMenuState(!menuState)}>
             <button >
@@ -158,27 +147,28 @@ const Dropdown = () => {
             </div>
         </div>*/}
 
-        <div class="dropdown">
+<div className="dropdown">
           <div className="dropbtn">
-            <Link to="/programmes-offered" className="drop-icon" onClick={() => setMenuState(!menuState)}>
-              <DraftsIcon /> PROGRAMMES OFFERED
+            <DraftsIcon />
+            <Link to="/programmes-offered" className="link-btn">
+              PROGRAMMES OFFERED
             </Link>
           </div>
         </div>
 
 
-        <div class="dropdown">
+        {/* <div class="dropdown">
           <div className="dropbtn">
             <Link to="/reports" className="drop-icon" onClick={() => setMenuState(!menuState)}>
               <DescriptionIcon /> REPORTS
             </Link>
           </div>
-        </div>
+        </div> */}
 
 
         <div class="dropdown">
           <div class="dropbtn">
-            <DraftsIcon /> FEEDBACK FORMS
+            <DraftsIcon />&nbsp; FEEDBACK FORMS
           </div>
           <div class="dropdown-content" onClick={() => setMenuState(!menuState)}>
             <button >

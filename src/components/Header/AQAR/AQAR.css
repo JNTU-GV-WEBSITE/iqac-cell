@@ -5,25 +5,37 @@ table {
   }
   
   th, td {
-    border: 1px solid #ddd;
+    border: 1px solid #daefef;
     padding: 8px;
     text-align: left;
   }
   
-  th {
-    background-color: #f2e9e9;
+  .reports th {
+    background-color: #daefef;
   }
 
   .AQAR2 {
-    color: #690001;
+    color: #035a5a;
     text-align: center;
     margin-bottom: 20px; /* Add margin-bottom to create space between heading and table */
   }
 
   .AAR2 {
-    color: #690001;
+    color: #035a5a;
     text-align: center;
     margin-bottom: 20px; /* Add margin-bottom to create space between heading and table */
+  }
+
+  .AR2 {
+    color: #035a5a;
+    text-align: center;
+    margin-bottom: 20px; /* Add margin-bottom to create space between heading and table */
+  }
+
+  .events-heading{
+    color: #035a5a;
+    text-align: center;
+    margin-bottom: 20px;
   }
   
   button2 {

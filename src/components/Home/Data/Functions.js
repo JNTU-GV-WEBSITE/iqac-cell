@@ -26,7 +26,7 @@ function Functions() {
           ❖ Conduct periodic audits of academic, administrative and research activities for quality assessment.<br />
           ❖ Collection of feedback from different stakeholders, Analyze and suggest remedial actions for all stakeholder satisfaction.<br />
           ❖ Preparing Annual Quality Assurance Report (AQAR) as per norms.
-          </Typography>
+          </Typography><br />
 
            </div>
         </div>

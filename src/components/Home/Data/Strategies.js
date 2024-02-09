@@ -29,7 +29,7 @@ function Strategies() {
           ❖ To develop a system for conscious, consistent and catalytic action to improve the academic and administrative performance of the institution.<br />
           ❖ To promote measures for institutional functioning towards quality enhancement through internalization of quality culture and<br /> institutionalization of best practices.<br />
           ❖ To ensure an enhancement and integration among the various activities of the university and institutionalize many good practices<br />
-          </Typography>
+          </Typography><br />
            </div>
         </div>
       </div>

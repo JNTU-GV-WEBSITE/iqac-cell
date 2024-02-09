@@ -28,7 +28,7 @@ function Monitoring() {
          ❖ The AQAR shall be approved by the statutory bodies of the University (such as Syndicate, Governing Council/Board) for the follow up action<br /> for necessary quality enhancement measures.<br />
          ❖ The Universities shall regularly submit the AQARs to the NAAC/other accreditation bodies.<br />
          ❖ All Universities shall submit AQARs and/or Quality Radars (QRs) and follow up reports of AQARs to the UGC.<br />
-         </Typography>
+         </Typography><br />
            </div>
         </div>
       </div>
