@@ -49,7 +49,7 @@ function Home() {
         <div className="iqacMessage">
         <h3 className="iqacmsg"><b>IQAC Cell Message </b></h3>
           <p>"To ensure quality culture as the prime concern for the Higher Education Institutions through institutionalizing and internalizing all the initiatives taken with internal and external support."</p>
-          <p className="signature">Dr. K. Chandra Bhushana Rao<br />IQAC Cell director</p>
+          <p className="signature">Dr. K. Chandra Bhushana Rao<br />IQAC Cell Director</p>
         </div>
       </div>
     </div>
