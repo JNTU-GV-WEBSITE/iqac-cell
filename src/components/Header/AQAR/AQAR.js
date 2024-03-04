@@ -26,7 +26,7 @@ const AQAR = () => {
   };
 
   const renderAARTableRows = () => {
-    const aarReports = AnnualQualityAssuranceReport.slice(3, 6); // Next three reports for AAR
+    const aarReports = AnnualQualityAssuranceReport.slice(3, 7); // Next three reports for AAR
     return aarReports.map((report) => (
       <tr key={report.sno}>
         <td>{report.sno}</td>
@@ -40,7 +40,7 @@ const AQAR = () => {
   };
 
   const renderAuditReportTableRows = () => {
-    const auditReports = AnnualQualityAssuranceReport.slice(6); // Remaining reports for Audit Reports
+    const auditReports = AnnualQualityAssuranceReport.slice(7); // Remaining reports for Audit Reports
     return auditReports.map((report) => (
       <tr key={report.sno}>
         <td>{report.sno}</td>
