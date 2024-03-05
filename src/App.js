@@ -46,7 +46,7 @@ import Outcomes from './components/Home/Data/Outcomes';
 import AICTE from './components/Home/AICTE/AICTE';
 import MOU from './components/Home/Data/MOU';
 import Events from './components/Home/Data/Events';
-import Forms from './components/Header/Forms/Forms';
+//import Forms from './components/Header/Forms/Forms';
 
 function App() {
  // const location = useLocation();
@@ -82,7 +82,7 @@ function App() {
          <Route path="/qat" element={<QAT />} /> 
         <Route path="/AQAR" element={<AQAR />} />
         <Route path="/pdf-viewer/:path" element={<PdfViewer />} />
-        <Route path="/forms" element={<Forms />} />
+        {/* <Route path="/forms" element={<Forms />} /> */}
       
       <Route path="/feedbackforms" element={<FeedbackformsMain />}>
           <Route path="faculty-form" element={<Faculty />} />
