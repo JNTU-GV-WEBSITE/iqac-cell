@@ -3,7 +3,7 @@ import './Alumni.css';
 
 const Alumni = () => {
   const [alumniDetails, setAlumniDetails] = useState({
-    facultyName: '',
+    aluminiName: '',
     department: '',
     contactNo: '',
     emailId: '',

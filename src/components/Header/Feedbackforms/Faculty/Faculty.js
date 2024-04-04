@@ -3,19 +3,19 @@ import './Faculty.css';
 
 const Faculty = () => {
   const [facultyDetails, setFacultyDetails] = useState({
-    facultyName: '',
+    faculty_name: '',
     department: '',
-    contactNo: '',
+    contact_no: '',
     email: '',
     degree: '',
     specialization: '',
-    academicYear: '',
-    subjectsTaught: '',
+    academic_year: '',
+    subjects_taught: '',
     suggestions: {
-      topicsToAdd: '',
-      topicsToDelete: '',
-      subjectsToAdd: '',
-      subjectsToDelete: '',
+      topics_to_add: '',
+      topics_to_delete: '',
+      subjects_to_add: '',
+      subjects_to_delete: '',
     },
   });
 
@@ -47,7 +47,7 @@ const Faculty = () => {
   <label className="form-label">
     1. Name : &nbsp;
     <div className='inp1'>
-      <input type="text" name="facultyName" value={facultyDetails.facultyName} onChange={handleChange} />
+      <input type="text" name="faculty_name" value={facultyDetails.faculty_name} onChange={handleChange} />
     </div>
   </label>
 
@@ -61,7 +61,7 @@ const Faculty = () => {
       <label className="form-label">
         3. Contact Number : &nbsp;
         <div className='inp1'>
-        <input type="text" name="contactNumber" value={facultyDetails.contactNumber} onChange={handleChange} />
+        <input type="text" name="contactNumber" value={facultyDetails.contact_number} onChange={handleChange} />
       </div>
       </label>
 
@@ -89,14 +89,14 @@ const Faculty = () => {
       <label className="form-label">
         7. Academic Year : &nbsp;
         <div className='inp1'>
-        <input type="text" name="academicYear" value={facultyDetails.academicYear} onChange={handleChange} />
+        <input type="text" name="academic_year" value={facultyDetails.academic_year} onChange={handleChange} />
       </div>
       </label>
 
       <label className="form-label">
         8. Subjects Taught : &nbsp;
         <div className='inp1'>
-        <input type="text" name="subjectsTaught" value={facultyDetails.subjectsTaught} onChange={handleChange} />
+        <input type="text" name="subjects_taught" value={facultyDetails.subjects_taught} onChange={handleChange} />
       </div>
       </label>
 
@@ -110,7 +110,7 @@ const Faculty = () => {
         <input
           type="text"
           name="suggestions.topicsToAdd"
-          value={facultyDetails.suggestions.topicsToAdd}
+          value={facultyDetails.suggestions.topics_to_add}
           onChange={handleChange}
         />
         </div>
@@ -122,7 +122,7 @@ const Faculty = () => {
         <input
           type="text"
           name="suggestions.topicsToDelete"
-          value={facultyDetails.suggestions.topicsToDelete}
+          value={facultyDetails.suggestions.topics_to_delete}
           onChange={handleChange}
         />
         </div>
@@ -134,7 +134,7 @@ const Faculty = () => {
         <input
           type="text"
           name="suggestions.subjectsToAdd"
-          value={facultyDetails.suggestions.subjectsToAdd}
+          value={facultyDetails.suggestions.subjects_to_add}
           onChange={handleChange}
         />
         </div>
@@ -146,7 +146,7 @@ const Faculty = () => {
         <input
           type="text"
           name="suggestions.subjectsToDelete"
-          value={facultyDetails.suggestions.subjectsToDelete}
+          value={facultyDetails.suggestions.subjects_to_delete}
           onChange={handleChange}
         />
         </div>
