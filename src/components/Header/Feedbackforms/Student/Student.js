@@ -3,12 +3,12 @@ import './Student.css';
 
 const Student = () => {
   const [studentDetails, setStudentDetails] = useState({
-    studentName: '',
-    rollNumber: '',
+    student_name: '',
+    roll_number: '',
     degree: '',
     specialization: '',
-    academicYear: '',
-    yearOfStudying: '',
+    academic_year: '',
+    year_of_studying: '',
     semester: {
       email: '',
       suggestions: '',
@@ -76,14 +76,14 @@ const Student = () => {
       <label className="form-label">
         1. Name : &nbsp;
         <div className='inp1'>
-        <input type="text" name="studentName" value={studentDetails.studentName} onChange={handleChange} />
+        <input type="text" name="student_name" value={studentDetails.student_name} onChange={handleChange} />
       </div>
       </label>
       
       <label className="form-label">
         2. Roll Number : &nbsp;
         <div className='inp1'>
-        <input type="text" name="rollNumber" value={studentDetails.rollNumber} onChange={handleChange} />
+        <input type="text" name="roll_number" value={studentDetails.roll_number} onChange={handleChange} />
       </div>
       </label>
       
@@ -104,14 +104,14 @@ const Student = () => {
       <label className="form-label">
         5. Year of studying : &nbsp;
         <div className='inp1'>
-        <input type="text" name="yearOfStudying" value={studentDetails.yearOfStudying} onChange={handleChange} />
+        <input type="text" name="year_of_studying" value={studentDetails.year_of_studying} onChange={handleChange} />
       </div>
       </label>
       
       <label className="form-label">
         6. Semester : &nbsp;
         <div className='inp1'>
-        <input type="text" name="academicYear" value={studentDetails.academicYear} onChange={handleChange} />
+        <input type="text" name="academic_year" value={studentDetails.academic_year} onChange={handleChange} />
       </div>
       </label>
       
