@@ -1,19 +1,23 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 import './Alumni.css';
 
 const Alumni = () => {
   const [alumniDetails, setAlumniDetails] = useState({
     aluminiName: '',
-    department: '',
-    contactNo: '',
-    emailId: '',
+    address: '',
+    contact : '',
+    email: '',
+    year: '',
     degree: '',
     specialization: '',
-    academicYear: '',
-    subjectsTaught: '',
-    willingnessToSupport: '',
-    syllabusSatisfaction: '',
-    deleted: '',
+    presentStatus: '',
+    suitableToVisit: '',
+    willingToSupport: '',
+    syllabus: '',
+    recommendsModifications:'',
+    suggestions:''
+
   });
 
   const handleChange = (e) => {
@@ -25,12 +29,17 @@ const Alumni = () => {
   };
 
   const handleSave = (e) => {
-    e.preventDefault(); // Prevent the default form submission behavior
-    // Add your save logic here
+    e.preventDefault(); 
     console.log('Saved:', alumniDetails);
-
-    // Reload the page
-    window.location.reload();
+    axios.post('http://localhost:4000/insert_alumini_data/',alumniDetails)
+    .then((response)=>{
+      console.log(response.data)
+    })
+    .catch((error)=>{
+      console.log(error)
+    })
+   
+    // window.location.reload();
   };
 
   const handleCancel = () => {
@@ -45,63 +54,63 @@ const Alumni = () => {
       <label className="form-label">
         1. Name : &nbsp;
         <div className='inp1'>
-        <input type="text" name="facultyName" value={alumniDetails.facultyName} onChange={handleChange} />
+        <input type="text" name="aluminiName" value={alumniDetails.aluminiName} onChange={handleChange} />
       </div>
       </label>
 
       <label className="form-label">
         2. Address : &nbsp;
         <div className='inp1'>
-        <input type="text" name="department" value={alumniDetails.department} onChange={handleChange} />
+        <input type="text" name="address" value={alumniDetails.address} onChange={handleChange} />
       </div>
       </label>
 
       <label className="form-label">
         3. Contact Number : &nbsp;
         <div className='inp1'>
-        <input type="text" name="contactNo" value={alumniDetails.contactNo} onChange={handleChange} />
+        <input type="text" name="contact" value={alumniDetails.contact} onChange={handleChange} />
       </div>
       </label>
 
       <label className="form-label">
         4. Email ID : &nbsp;
         <div className='inp1'>
-        <input type="text" name="emailId" value={alumniDetails.emailId} onChange={handleChange} />
+        <input type="text" name="email" value={alumniDetails.email} onChange={handleChange} />
       </div>
       </label>
 
       <label className="form-label">
         5. Year of passing : &nbsp;
         <div className='inp1'>
-        <input type="text" name="degree" value={alumniDetails.degree} onChange={handleChange} />
+        <input type="text" name="year" value={alumniDetails.year} onChange={handleChange} />
       </div>
       </label>
 
       <label className="form-label">
         6. Degree : &nbsp;
         <div className='inp1'>
-        <input type="text" name="specialization" value={alumniDetails.specialization} onChange={handleChange} />
+        <input type="text" name="degree" value={alumniDetails.degree} onChange={handleChange} />
       </div>
       </label>
 
       <label className="form-label">
         7. Specialization : &nbsp;
         <div className='inp1'>
-        <input type="text" name="academicYear" value={alumniDetails.academicYear} onChange={handleChange} />
+        <input type="text" name="specialization" value={alumniDetails.specialization} onChange={handleChange} />
       </div>
       </label>
 
       <label className="form-label">
         8. Present status : &nbsp;
         <div className='inp1'>
-        <input type="text" name="subjectsTaught" value={alumniDetails.subjectsTaught} onChange={handleChange} />
+        <input type="text" name="presentStatus" value={alumniDetails.presentStatus} onChange={handleChange} />
       </div>
       </label>
 
       <label className="form-label">
         9. Suitable date to Visit this University : &nbsp;
         <div className='inp1'>
-        <input type="text" name="suitableDate" value={alumniDetails.suitableDate} onChange={handleChange} />
+        <input type="text" name="suitableToVisit" value={alumniDetails.suitableToVisit} onChange={handleChange} />
       </div>
       </label>
 
@@ -111,20 +120,20 @@ const Alumni = () => {
           <label>
             <input
               type="radio"
-              name="willingnessToSupport"
+              name="willingToSupport"
               value="yes"
               onChange={handleChange}
-              checked={alumniDetails.willingnessToSupport === 'yes'}
+              checked={alumniDetails.willingToSupport === 'yes'}
             />
             Yes
           </label>
           <label style={{ marginLeft: '10px' }}>
             <input
               type="radio"
-              name="willingnessToSupport"
+              name="willingToSupport"
               value="no"
               onChange={handleChange}
-              checked={alumniDetails.willingnessToSupport === 'no'}
+              checked={alumniDetails.willingToSupport === 'no'}
             />
             No
           </label>
@@ -141,20 +150,20 @@ const Alumni = () => {
           <label>
             <input
               type="radio"
-              name="syllabusSatisfaction"
+              name="syllabus"
               value="Yes"
               onChange={handleChange}
-              checked={alumniDetails.syllabusSatisfaction === 'Yes'}
+              checked={alumniDetails.syllabus === 'Yes'}
             />
             Yes
           </label>
           <label className="form-label" style={{ marginLeft: '10px' }}>
             <input
               type="radio"
-              name="syllabusSatisfaction"
+              name="syllabus"
               value="No"
               onChange={handleChange}
-              checked={alumniDetails.syllabusSatisfaction === 'No'}
+              checked={alumniDetails.syllabus === 'No'}
             />
             No
           </label>
@@ -166,8 +175,8 @@ const Alumni = () => {
         <div className='inp1'>
         <input
           type="text"
-          name="deleted"
-          value={alumniDetails.deleted}
+          name="recommendsModifications"
+          value={alumniDetails.recommendsModifications}
           onChange={handleChange}
         /></div>
       </label>
@@ -175,7 +184,7 @@ const Alumni = () => {
       <label className="form-label">
         12. Other suggestions : &nbsp;
         <div className='inp1'>
-        <input type="text" name="otherSuggestions" value={alumniDetails.otherSuggestions} onChange={handleChange} />
+        <input type="text" name="suggestions" value={alumniDetails.suggestions} onChange={handleChange} />
       </div>
       </label>
       <br /> <br />
