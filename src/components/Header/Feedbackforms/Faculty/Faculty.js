@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 import './Faculty.css';
 
 const Faculty = () => {
@@ -11,12 +12,10 @@ const Faculty = () => {
     specialization: '',
     academic_year: '',
     subjects_taught: '',
-    suggestions: {
       topics_to_add: '',
       topics_to_delete: '',
       subjects_to_add: '',
-      subjects_to_delete: '',
-    },
+      subjects_to_delete: ''
   });
 
   const handleChange = (e) => {
@@ -31,15 +30,23 @@ const Faculty = () => {
     e.preventDefault(); // Prevent the default form submission behavior
     // Add your save logic here
     console.log('Saved:', facultyDetails);
+    axios.post('http://localhost:4000/insert_faculty_data/',facultyDetails)
+    .then((response)=>{
+      console.log(response.data)
+    })
+    .catch((error)=>{
+      console.log(error)
+    })
 
     // Reload the page
-    window.location.reload();
+    // window.location.reload();
   };
 
   const handleCancel = () => {
     // Add your cancel logic here
     console.log('Cancelled');
   };
+
 
   return (
     <form className='FFF' onSubmit={handleSave}>
@@ -61,7 +68,7 @@ const Faculty = () => {
       <label className="form-label">
         3. Contact Number : &nbsp;
         <div className='inp1'>
-        <input type="text" name="contactNumber" value={facultyDetails.contact_number} onChange={handleChange} />
+        <input type="text" name="contact_no" value={facultyDetails.contact_no} onChange={handleChange} />
       </div>
       </label>
 
@@ -109,8 +116,8 @@ const Faculty = () => {
         <div className='inp1'>
         <input
           type="text"
-          name="suggestions.topicsToAdd"
-          value={facultyDetails.suggestions.topics_to_add}
+          name="topics_to_add"
+          value={facultyDetails.topics_to_add}
           onChange={handleChange}
         />
         </div>
@@ -121,8 +128,8 @@ const Faculty = () => {
         <div className='inp1'>
         <input
           type="text"
-          name="suggestions.topicsToDelete"
-          value={facultyDetails.suggestions.topics_to_delete}
+          name="topics_to_delete"
+          value={facultyDetails.topics_to_delete}
           onChange={handleChange}
         />
         </div>
@@ -133,8 +140,8 @@ const Faculty = () => {
         <div className='inp1'>
         <input
           type="text"
-          name="suggestions.subjectsToAdd"
-          value={facultyDetails.suggestions.subjects_to_add}
+          name="subjects_to_add"
+          value={facultyDetails.subjects_to_add}
           onChange={handleChange}
         />
         </div>
@@ -145,8 +152,8 @@ const Faculty = () => {
         <div className='inp1'>
         <input
           type="text"
-          name="suggestions.subjectsToDelete"
-          value={facultyDetails.suggestions.subjects_to_delete}
+          name="subjects_to_delete"
+          value={facultyDetails.subjects_to_delete}
           onChange={handleChange}
         />
         </div>

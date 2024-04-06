@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import axios from 'axios';
+
 import './Student.css';
 
 const Student = () => {
@@ -9,13 +11,11 @@ const Student = () => {
     specialization: '',
     academic_year: '',
     year_of_studying: '',
-    semester: {
-      email: '',
-      suggestions: '',
-      feedback: {
-        q1: '',
-        q2: '',
-        q3: '',
+    email: '',
+    suggestions: '',
+     q1: '',
+     q2: '',
+     q3: '',
         q4: '',
         q5: '',
         q6: '',
@@ -24,9 +24,7 @@ const Student = () => {
         q9: '',
         q10: '',
         q11: '',
-        q12: '',
-      },
-    },
+        q12: ''
   });
 
   const handleChange = (e) => {
@@ -36,34 +34,45 @@ const Student = () => {
       [name]: value,
     }));
   };
+  // const handleSemesterChange = (e) => {
+  //   const { name, value } = e.target;
+  //   setStudentDetails((prevDetails) => ({
+  //     ...prevDetails,
+  //     semester: {
+  //       ...prevDetails.semester,
+  //       [name]: value,
+  //     },
+  //   }));
+  // };
 
-  const handleSemesterChange = (e) => {
-    const { name, value } = e.target;
-    setStudentDetails((prevDetails) => ({
-      ...prevDetails,
-      semester: {
-        ...prevDetails.semester,
-        [name]: value,
-      },
-    }));
-  };
+  // const handleSuggestionChange = (e) => {
+  //   const { name, value } = e.target;
+  //   setStudentDetails((prevDetails) => ({
+  //     ...prevDetails,
+  //     semester: {
+  //       ...prevDetails.semester,
+  //       feedback: {
+  //         ...prevDetails.semester.feedback,
+  //         [name]: value,
+  //       },
+  //     },
+  //   }));
+  // };
 
-  const handleSuggestionChange = (e) => {
-    const { name, value } = e.target;
-    setStudentDetails((prevDetails) => ({
-      ...prevDetails,
-      semester: {
-        ...prevDetails.semester,
-        feedback: {
-          ...prevDetails.semester.feedback,
-          [name]: value,
-        },
-      },
-    }));
-  };
-
-  const handleSave = () => {
+  const handleSave = (e) => {
     console.log('Saved:', studentDetails);
+    e.preventDefault(); // Prevent the default form submission behavior
+    // Add your save logic here
+    console.log('Saved:', studentDetails);
+    axios.post('http://localhost:4000/insert_student_data/',studentDetails)
+    .then((response)=>{
+      // console.log(response.data)
+      window.alert("Successfully Feedback submitted");
+    })
+    .catch((error)=>{
+      console.log(error)
+    })
+
   };
 
   const handleCancel = () => {
@@ -118,14 +127,15 @@ const Student = () => {
       <label className="form-label">
         7. Email ID : &nbsp;
         <div className='inp1'>
-        <input type="text" name="email" value={studentDetails.semester.email} onChange={handleSemesterChange} />
+        <input type="text" name="email" value={studentDetails.email} onChange={handleChange} />
       </div>
       </label>
 
       <label className="form-label">
         8. Any other suggestions : &nbsp;
         <div className='inp1'>
-        <input type="text" name="suggestions" value={studentDetails.semester.suggestions} onChange={handleSemesterChange} />
+        <input type="text" name="suggestions" value={studentDetails.suggestions} onChange={handleChange} />
+
       </div>
       </label>
 
@@ -156,25 +166,26 @@ const Student = () => {
             { question: 'Rate the design of course with respect to self-learning' },
             { question: 'Rate the composition of the course in terms of Basic Science, Engineering Science, Humanities, Discipline Core, Discipline Elective, Open Elective, etc.' },
           ].map((item, index) => (
-            <tr key={index}>
-              <td>{item.question}</td>
-              {[1, 2, 3, 4, 5].map((rating) => (
-                <td key={rating}>
-                  <label>
-                    <input
-                      type="radio"
-                      name={`q${index + 1}`}
-                      value={rating}
-                      onChange={handleSuggestionChange}
-                      checked={studentDetails.semester.feedback[`q${index + 1}`] === `${rating}`}
-                    />
-                  </label>
-                </td>
-              ))}
-            </tr>
-          ))}
-        </tbody>
-      </table><br/>
+          <tr key={index}>
+            <td>{item.question}</td>
+            {[1, 2, 3, 4, 5].map((rating) => (
+              <td key={rating}>
+                <label>
+                  <input
+                    type="radio"
+                    name={'q' + (index + 1)} // Correct the concatenation syntax
+                    value={rating}
+                    checked={studentDetails['q' + (index + 1)] === String(rating)} // Use 'rating' directly, without jQuery
+                    onChange={handleChange}
+                  />
+                </label>
+              </td>
+            ))}
+          </tr>
+        ))}
+      </tbody>
+    </table><br/>
+
 
       <div className="button-container">
         <button type="button1" onClick={handleSave}>
