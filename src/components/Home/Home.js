@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import "./Home.css";
 import SendIcon from '@mui/icons-material/Send';
+import chatbotGif from "../Header/VirtualAssistant/chatbot.gif"; 
+// import { alignProperty } from "@mui/material/styles/cssUtils";
 
 function Home() {
   return (
@@ -43,6 +45,20 @@ function Home() {
           </div>
         </div>
       </div>
+
+      <div style={{ textAlign: 'right' }}>
+  <div style={{ fontWeight: 'bold', color: '#2e0669' }}>Click here to Visit Chatbot</div>
+  <div className="right">
+    <p className="centered-link">
+      <a href="https://bb8d-2401-4900-4b58-e0af-b52f-4c3c-e6f7-bdd.ngrok-free.app" target="_blank" rel="noopener noreferrer">
+        <img src={chatbotGif} alt="Click here" className="gif-image" style={{ width: "150px", height: "150px" }} />
+      </a>
+    </p>
+  </div>
+</div>
+
+
+
 
       <br /><br />
       <div className="iqacMessageContainer">
