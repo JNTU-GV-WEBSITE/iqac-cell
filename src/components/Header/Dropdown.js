@@ -10,7 +10,7 @@ import ApartmentIcon from "@mui/icons-material/Apartment";
 import DescriptionIcon from "@mui/icons-material/Description";
 import MenuIcon from "@mui/icons-material/Menu";
 import CampaignIcon from '@mui/icons-material/Campaign';
-import SupportAgentIcon from "@mui/icons-material/SupportAgent";
+//import SupportAgentIcon from "@mui/icons-material/SupportAgent";
 
 import { useState } from "react";
 // import { PiExamFill } from "react-icons/pi";
@@ -201,14 +201,14 @@ const Dropdown = () => {
           </div>
         </div> */}
 
-<div className="dropdown">
+{/* <div className="dropdown">
           <div className="dropbtn">
           <SupportAgentIcon />
             <Link to="/virtual-assistant" className="link-btn">
               VIRTUAL ASSISTANT
             </Link>
           </div>
-        </div>
+        </div> */}
       
       
       

@@ -46,7 +46,7 @@ import Outcomes from './components/Home/Data/Outcomes';
 import AICTE from './components/Home/AICTE/AICTE';
 import MOU from './components/Home/Data/MOU';
 import Events from './components/Home/Data/Events';
-import VirtualAssistant from './components/Header/VirtualAssistant/VirtualAssistant';
+//import VirtualAssistant from './components/Header/VirtualAssistant/VirtualAssistant';
 //import Forms from './components/Header/Forms/Forms';
 
 function App() {
@@ -114,7 +114,7 @@ function App() {
         <Route path="/update-panel" element={<UpdatePanel />} /> */}
 
         <Route path="/notifications" element={<Notifications />} /> 
-        <Route path="/virtual-assistant" element={<VirtualAssistant />} /> 
+        {/* <Route path="/virtual-assistant" element={<VirtualAssistant />} />  */}
         </Routes>
 
         
