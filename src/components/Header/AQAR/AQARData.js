@@ -15,7 +15,7 @@ import AR11_12 from './AR11-12.pdf';
 import AR15_16 from './AR15-16.pdf';
 import AR17_18_19 from './AR17-18-19.pdf';
 import AR19_20 from './AR19-20.pdf';
-
+import AR22_23 from './AR22-23.pdf';
 
   
 
@@ -33,6 +33,13 @@ const AnnualQualityAssuranceReport = [
   {
     sno: "Report 2017-18",
     pdfPath: AnnualReport2017_2018,
+    name: "View/Download",
+  },
+
+
+  {
+    sno: "Report 2022-23",
+    pdfPath: AR22_23,
     name: "View/Download",
   },
   {
