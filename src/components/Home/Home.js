@@ -50,7 +50,7 @@ function Home() {
   <div style={{ fontWeight: 'bold', color: '#2e0669' }}>Click here to Visit Chatbot</div>
   <div className="right">
     <p className="centered-link">
-      <a href="https://bb8d-2401-4900-4b58-e0af-b52f-4c3c-e6f7-bdd.ngrok-free.app" target="_blank" rel="noopener noreferrer">
+      <a href="https://5633-2401-4900-60ef-ad5a-89ee-c1-6f0d-7c7b.ngrok-free.app" target="_blank" rel="noopener noreferrer">
         <img src={chatbotGif} alt="Click here" className="gif-image" style={{ width: "150px", height: "150px" }} />
       </a>
     </p>
